@@ -9,7 +9,9 @@ const passport = require("passport")
 const localStrategy = require("passport-local")
 const passportLocalMongoose = require("passport-local-mongoose")
 
-mongoose.connect("mongodb://localhost/EXCELZ", {
+let url = process.env.dburl || "mongodb://localhost/EXCELZ"
+
+mongoose.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

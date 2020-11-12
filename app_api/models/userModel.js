@@ -6,25 +6,7 @@ const userSchema = new mongoose.Schema({
     email: {type:String, unique:true, required:true},
     password: String,
     createdAt:{type:Date, default:Date.now},
-    prdctsViewed:[
-            {
-                type: mongoose.Schema.Types.ObjectId,
-                ref: "Product"
-            }
-    ],
-    avatar: String,
-    shop:[
-            {
-                type: mongoose.Schema.Types.ObjectId,
-                ref: "Shop" 
-            }
-        ],
-    products:[
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Product" 
-        }
-    ],   
+    avatar: String, 
 })
 
 userSchema.plugin(passportLocalMongoose)
