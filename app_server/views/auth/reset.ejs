@@ -1,0 +1,36 @@
+<%- include("../partials/header") %>
+
+<div class="signup-body">
+    <h3 class="forms-head-text">NEW PASSWORD reset</h3>
+      <div class="signup-wrapper">
+        <form action="/akuaba/reset/<%= token %>" method="POST">
+        
+                <input type="password" name="password" value="" placeholder="New password" />
+                <input type="password" name="confirm" value="" placeholder="Confirm password"/>
+                <button type="submit" class="btn btn-primary">Update Password</button>
+        </form>
+      </div>
+</div>
+
+<div class="signup-body">
+  <div class="signup-wrapper">
+      <div class="form-wrapper"> 
+          <div class="logo">a</div>
+          <h3 class="forms-head-text">New password reset</h3>
+          <p>Enter and confirm your new password</p>
+      <form action="/akuaba/reset/<%= token %>" method="POST">
+          <label for="">New password</label>
+          <input type="password" name="password" value="" placeholder="New password" />
+          <label for="">Conform password</label>
+          <input type="password" name="confirm" value="" placeholder="Confirm password"/>
+          <button>SIGN IN</button>
+          <div class="form-links">
+              <a href="/akuaba/forgot">forgot password?</a>
+              <a href="/akuaba/signup">Create account</a>
+          </div>
+          
+      </form>
+  </div>
+  </div>
+  </div>          
+  <%- include("../partials/footer") %>

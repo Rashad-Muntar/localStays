@@ -1,0 +1,23 @@
+<%- include("../partials/header") %>
+
+			<div class="signup-body">
+				<div class="signup-wrapper forgot">
+					<div class="form-wrapper"> 
+						<div class="logo">a</div>
+						<h3 class="forms-head-text">Rest your password</h3>
+						<p>Enter your account email and submit</p>
+					<form action="/akuaba/forgot" method="POST">
+						<label for="">E-mail</label>
+						<input type="text" name="email" placeholder="Enter E-mail">
+						<button>SEND E-MAIL</button>
+						<div class="form-links">
+							<a href="/akuaba/login">already have account? Log in</a>
+							<a href="/akuaba/signup">Create account</a>
+						</div>
+						
+					</form>
+				</div>
+				</div>
+				</div>
+
+<%- include("../partials/footer") %>

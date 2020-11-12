@@ -1,0 +1,60 @@
+<%- include("../partials/header") %>
+
+<div class="product-info-wrapper">
+<div class="img-thumbnails">
+<img src="<%=product.image%>" alt="" class="thumbs">
+<img src="" alt="" class="thumbs">
+<img src="" alt="" class="thumbs">
+</div>
+<div class="img-preview">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="<%=product.image%>" alt="" class="thumbs">
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
+    </div>
+</div>
+<div class="product-detail">
+    <P class="title"><%=product.title%></P>
+    <div class="cart-price"> 
+        <P class="price">USD <%=product.price%></P>
+        <a href=""><div class="cart"><span class="cart-item"  uk-icon="cart"></span> Add to Cart</div></a>
+    </div>
+    
+    <div  class="buy-btn">Buy</div>
+    <div  class="paypal-btn">Buy with PayPal</div>
+
+    <div class="size-color">
+        <div class="SZ">
+            <p>Size</p> <div class="size"></div>
+        </div>
+        <div class="CL">
+            <p>Color </p><div class="color"></div>
+        </div>
+    </div>
+
+    <div class="materials">
+        <h5>Material</h5>
+        <p>We have millions of one-of-a-kind items, so you can find whatever you need (or really, really want).</p>
+    </div>
+
+
+    <div class="description">
+        <h5>Description</h5>
+        <p><%=product.description %></p>
+    </div>
+
+    <div class="description">
+        <h5>Description</h5>
+        <p><%=product.description %></p>
+    </div>
+
+</div>
+</div>
+<%- include("../partials/footer") %>

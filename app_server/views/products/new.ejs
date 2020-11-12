@@ -1,0 +1,215 @@
+<%- include("../partials/header") %>
+<h1>NEW PRODUCT</h1>
+
+<form action="/akuaba/user/<%=currentUser._id%>/product/new" method="POST">
+    <input type="text" name="title" placeholder="Product title here">
+    <textarea name="description" id="" cols="30" rows="10" placeholder="Describe your product here"></textarea>
+    <input type="text" name="image" placeholder="Enter product image url">
+    <input type="number" name="price" placeholder="Enter price">
+
+    <select name="category" id="category">
+        <option value="option">Select Option</option>
+        <option value="Art & collectibles" class="cat-el" >Art & collectibles</option>
+        <option value="Fashion & Clothing" class="cat-el" >Fashion & Clothing</option>
+        <option value="Sculpture & Forming" class="cat-el" >Sculpture & Forming</option>
+        <option value="Home & Deco" class="cat-el" id="el5">Home & Deco</option>
+        <option value="Jewelry & Accessories" class="cat-el" >Jewelry & Accessories</option>
+        <option value="Literature" class="cat-el" >Literature</option>
+        <option value="Other" class="cat-el" >Other</option>
+    </select>
+
+<div class="sub-categories">
+    <select name="subCategory" id="art" class="sub-cat">
+        <option value="option">Select Sub-category</option>
+        <optgroup value="" label="Art/Painting">
+            <option value="Acrylic">Acrylic</option>
+            <option value="Oil">Oil</option>
+            <option value="Gouache">Gouache</option>
+            <option value="Pastel">Pastel</option>
+            <option value="Ink">Ink</option>
+            <option value="Pencil">Pencil</option>
+            <option value="Encaustics">Encaustics</option>
+        </optgroup>
+        <optgroup value="" label="Collectibles">
+            <option value="Memorabilia">Memorabilia</option>
+            <option value="Figurines & Knick Knacks">Figurines & Knick Knacks</option>
+            <option value="Coins & Money">Coins & Money</option>
+            <option value="Tobacciana">Tobacciana</option>
+            <option value="Music Boxes">Music Boxes</option>
+            <option value="Collectible Glass">Collectible Glass</option>
+            <option value="Collectible Plates">Collectible Plates</option>
+        </optgroup>
+    </select>
+
+    <select name="subCategory" id="fashion" class="sub-cat">
+        <option value="option">Select Sub-category</option>
+        <optgroup value="" label="Women">
+            <option value="Dresses">Dresses</option>
+            <option value="Jackets & Coats">Jackets & Coats</option>
+            <option value="Skirts">Skirts</option>
+            <option value="Tops & Tees">Tops & Tees</option>
+            <option value="Hoodies & Sweatshirts">Hoodies & Sweatshirts</option>
+            <option value="Pants & Capris">Pants & Capris</option>
+            <option value="Sweaters">Sweaters</option>
+            <option value="Swimwear">Swimwear</option>
+            <option value="Blazers & Suits">Blazers & Suits</option>
+            <option value="Jeans">Jeans</option>
+            <option value="Vests">Vests</option>
+            <option value="Jumpsuits & Rompers">Jumpsuits & Rompers</option>
+            <option value="Bodysuits & Catsuits">Bodysuits & Catsuits</option>
+        </optgroup>
+        <optgroup value="" label="Men">
+            <option value="Shirts & Tees">Shirts & Tees</option>
+            <option value="Hoodies & Sweatshirts">Hoodies & Sweatshirts</option>
+            <option value="Jackets & Coats">Jackets & Coats</option>
+            <option value="Sweaters">Sweaters</option>
+            <option value="Pants">Pants</option>
+            <option value="Jeans">Jeans</option>
+            <option value="Shorts">Shorts</option>
+            <option value="Underwear">Underwear</option>
+            <option value="Suits & Sport Coats">Suits & Sport Coats</option>
+        </optgroup>
+        <optgroup value="" label="Kids">
+            <optgroup value="" label="Kids Girls">
+                <option value="Baby Girls' Clothing">Baby Girls' Clothing</option>
+                <option value="Tops & Tees">Tops & Tees</option>
+                <option value="Dresses">Dresses</option>
+                <option value="Bodysuits">Bodysuits</option>
+                <option value="Clothing Sets">Clothing Sets</option>
+                <option value="Skirts">Skirts</option>
+                <option value="Hoodies & Sweatshirts">Hoodies & Sweatshirts</option>
+                <option value="Underwear">Sweaters</option>
+                <option value="Suits & Sport Coats">Sweaters</option>
+                <option value="Footies & Rompers">Footies & Rompers</option>
+                <option value="Swimwear">Swimwear</option>
+                <option value="Jeans">Jeans</option>
+                <option value="Vests">Vests</option>
+                <option value="Jeans">Jeans</option>
+                <option value="Suits & Sport Coats">Sports & Fitness</option>
+                <option value="Overalls">Overalls</option>
+            </optgroup>
+            <optgroup value="" label="Kids Boys">
+                <option value="Overalls & Coveralls">Overalls & Coveralls</option>
+                <option value="Swimwear">Swimwear</option>
+                <option value="Suits">Suits</option>
+                <option value="Footies & Rompers">Footies & Rompers</option>
+                <option value="Shirts & Tees">Shirts & Tees</option>
+                <option value="Hoodies & Sweatshirts">Hoodies & Sweatshirts</option>
+                <option value="Jackets & Coats">Jackets & Coats</option>
+                <option value="Sweaters">Sweaters</option>
+                <option value="Pants">Pants</option>
+                <option value="Jeans">Jeans</option>
+                <option value="Shorts">Shorts</option>
+                <option value="Underwear">Underwear</option>
+                <option value="Suits & Sport Coats">Sports & Fitness</option>
+            </optgroup>
+        </optgroup>
+        <optgroup value="" label="Bags & Purses">
+            <option value="Backpacks">Backpacks</option>
+            <option value="Shoulder Bags">Clutches & Evening Bags</option>
+            <option value="Crossbody Bags">Crossbody Bags</option>
+            <option value="Top Handle Bags">Top Handle Bags</option>
+            <option value="Wristlets">Wristlets</option>
+            <option value="Hobo Bags">Hobo Bags</option>
+            <option value="Purse Inserts">Purse Inserts</option>
+            <option value="Purse Straps">Purse Straps</option>
+        </optgroup>
+    </select>
+
+    <select name="subCategory" id="sculpture" class="sub-cat">
+        <option value="option">Select Sub-category</option>
+        <optgroup label="Ceramics & Pottery">
+            <option value="Tools">Tools</option>
+            <option value="Materials">Materials</option>
+            <option value="Racks & Shelves">Racks & Shelves</option>
+        </optgroup>
+        <optgroup label="Sculpture">
+            <option value="Art Objects">Art Objects</option>
+            <option value="Materials">Materials</option>
+            <option value="Figurines">Figurines</option>
+            <option value="Vessels">Vessels</option>
+        </optgroup>
+        <optgroup label="Dols & Miniature">
+            <option value="Miniatures">Miniatures</option>
+            <option value="Art Dolls">Art Dolls</option>
+            <option value="Dollhouses">Dollhouses</option>
+            <option value="Dioramas">Dioramas</option>
+        </optgroup>
+    </select>
+
+    <select name="subCategory" id="home" class="sub-cat">
+        <option value="option">Select Sub-category</option>
+        <optgroup label="Home & Living">
+            <option value="Wall Décor">Wall Décor</option>
+            <option value="Ornaments & Accents">Ornaments & Accents</option>
+            <option value="Baskets & Bowls">Baskets & Bowls</option>
+            <option value="Rocks & Geodes">Rocks & Geodes</option>
+            <option value="Vases">Vases</option>
+            <option value="Wreaths & Door Hangers">Wreaths & Door Hangers</option>
+            <option value="Decorative Trays">Decorative Trays</option>
+            <option value="Statues">Statues</option>
+            <option value="Vases">Globes & Maps</option>
+            <option value="Floral Arrangements">Floral Arrangements</option>
+            <option value="Home Fragrances">Home Fragrances</option>
+            <option value="Statues">Statues</option>
+            <option value="Taxidermy & Curiosities">Taxidermy & Curiosities</option>
+            <option value="Bookends">Bookends</option>
+        </optgroup>
+            <optgroup label="Spirituality & Religion">
+            <option value="Spirituality & Religion">Spirituality & Religion</option>
+            </optgroup>
+            
+        <optgroup label="Lighting">
+            <option value="Lighting">Lighting</option>
+        </optgroup>
+        
+        <optgroup label="Skin & Beauty">
+            <option value="Skin & Beauty">Skin & Beauty</option>
+        </optgroup>
+        <optgroup label="Food & Drinks">
+            <option value="Food & Drinks">Food & Drinks</option>
+        </optgroup>
+    </select>
+
+    <select name="subCategory" id="jewelry" class="sub-cat">
+        <option value="option">Select Sub-category</option>
+        <optgroup label="Accessories">
+            <option value="Hair Accessories">Hair Accessories</option>
+            <option value="Keychains & Lanyards">Keychains & Lanyards</option>
+            <option value="Hats & Caps">Hats & Caps</option>
+            <option value="Scarves & Wraps">Scarves & Wraps</option>
+            <option value="Suit & Tie Accessories">Suit & Tie Accessories</option>
+            <option value="Hand Fans">Hand Fans</option>
+        </optgroup>
+        <optgroup label="Jewelries">
+            <option value="Hair Jewelry">Hair Jewelry</option>
+            <option value="Anklets">Anklets</option>
+            <option value="Nose Rings & Studs">Nose Rings & Studs</option>
+            <option value="Gauge & Plug Earrings">Gauge & Plug Earrings</option>
+            <option value="Belly Chains">Belly Chains</option>
+            <option value="Shoulder Jewelry">Shoulder Jewelry</option>
+            <option value="Arm Bands">Arm Bands</option>
+            <option value="Belly Chains">Belly Chains</option>
+            <option value="Shoulder Jewelry">Shoulder Jewelry</option>
+        </optgroup>
+    </select>
+
+    <select name="subCategory" id="literature" class="sub-cat">
+        <option value="option">Select Sub-category</option>
+        <option value="Literature & Fiction">Literature & Fiction</option>
+        <option value="Religion & Spirituality Books">Religion & Spirituality Books</option>
+        <option value="History Books">History Books</option>
+        <option value="Poetry Books">Poetry Books</option>
+        <option value="Biographies & Autobiographies">Biographies & Autobiographies</option>
+        <option value="Zines & Magazines">Zines & Magazines</option>
+    </select>
+
+    <select name="subCategory" id="other" class="sub-cat">
+        <option value="">Others</option>
+    </select>
+</div>
+<button>Submit</button>
+</form>
+</div>
+
+<%- include("../partials/footer") %>

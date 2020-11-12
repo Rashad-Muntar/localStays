@@ -1,0 +1,417 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.section-head-text{
+    margin: 0 auto;
+    width: 65vw;
+    text-align: center;
+    margin-top: 100px;
+
+    h3{
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
+
+
+header{
+    width: 100vw;
+    height: 70px;
+    position: absolute;
+    border-bottom: 1px solid rgb(197, 197, 197);
+
+    nav{
+        display: flex;
+        width: 65vw;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        
+        .brand{
+            text-decoration: none;
+            color: white;
+            font-size: 1.3em;
+            font-weight: 800;
+            span{
+                color: gold;
+            }
+        }
+        .center{
+            a{
+                font-size: 1.1em;
+                color: white;
+                text-decoration: none;
+                margin-left: 25px;
+                font-weight: 600;
+                padding-bottom: 7%;
+                transition: 0.3s;
+                &:hover{
+                    border-bottom: 4px solid gold;
+                    
+                }
+            }
+          
+
+        }
+
+        .right{
+            a{
+                font-size: 1.1em;
+                color: white;
+                text-decoration: none;
+                margin-left: 25px;
+                font-weight: 600;
+            }
+            #login{
+                background-color: teal;
+                padding: 8px 17px;
+                border-radius: 5px;
+                &:hover{
+                    background-color: rgb(14, 151, 151);
+                }
+            }
+        }
+    }
+ 
+}
+
+.header2{
+    width: 100vw;
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid rgb(197, 197, 197);
+
+    nav{
+        display: flex;
+        width: 65vw;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        
+        .brand{
+            text-decoration: none;
+            color: rgb(37, 37, 37);
+            font-size: 1.3em;
+            font-weight: 800;
+            span{
+                color: gold;
+            }
+        }
+        .center{
+            a{
+                font-size: 1.1em;
+                color: rgb(37, 37, 37);
+                text-decoration: none;
+                margin-left: 25px;
+                font-weight: 600;
+                padding-bottom: 7%;
+                transition: 0.3s;
+                &:hover{
+                    border-bottom: 4px solid gold;
+                    
+                }
+            }
+          
+
+        }
+
+        .right{
+            a{
+                font-size: 1.1em;
+                color: white;
+                text-decoration: none;
+                margin-left: 25px;
+                font-weight: 600;
+            }
+            #login{
+                background-color: teal;
+                padding: 8px 17px;
+                border-radius: 5px;
+                &:hover{
+                    background-color: rgb(14, 151, 151);
+                }
+            }
+        }
+    }
+ 
+}
+
+.hero{
+    height: 600px;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+    .head-text-wrap{
+        width: 65vw;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        .text-btn{
+                width: 70%;
+                border-right: 1px solid rgb(214, 214, 214);
+                margin-right: 40px;
+            h3{
+                color: white;
+                font-weight: 700;
+                font-family: 'Roboto', sans-serif;
+                font-size: 3em;
+                line-height: 60px;
+                letter-spacing: 2px;
+                span{
+                    color: rgb(14, 151, 151)
+                }
+            }
+            a{
+                text-decoration: none;
+                background-color: teal;
+                color: white;
+                letter-spacing: 2px;
+                font-weight: 600;
+                padding: 8px 15px;
+             
+                &:hover{
+                    background-color: rgb(14, 151, 151);
+                } 
+            }
+           
+        }
+   
+        .search-wrapper{
+            width: 50%;
+            height: 50px;
+            background-color: white;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+
+            .search{
+                border: none;
+                height: 100%;
+                width: 80%;
+                padding-left: 15px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .submit{
+                height: 100%;
+                background-color: gold;
+                border:none;
+                width: 20%;
+                right: 0;
+                font-weight: 600;
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    background-color: rgb(226, 194, 9);
+                }
+            }
+        }
+    }
+}
+.partner-wrapper{
+    width: 100vw;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    
+    .partners{
+        display: flex;
+        justify-content: space-between;
+        width: 65vw;
+        height: 100px;
+        margin: 0 auto;
+    
+        img{
+           width: 150px;
+           opacity: 0.2;
+           height: 100px; 
+        }
+    }
+    
+}
+
+.facts{
+    width: 65vw;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+
+    & > div{
+        width: 30%;
+        height: 220px;
+        background-color: rgb(229, 245, 239);
+        color:rgb(51, 51, 51);
+        border-radius: 7px;
+        border-top-right-radius: 100px;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        a{
+           margin: 0 auto;
+           border: none;
+           background-color: gold;
+           font-weight: 600;
+           border-radius: 5px;
+           text-decoration: none;
+           color:rgb(51, 51, 51);
+           padding: 7px 15px;
+           margin-top: 10px;
+        }
+        i{
+            background-color: teal;
+            color: white;
+            padding: 30px 30px;
+            border-radius: 100%;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h5{
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+            font-weight: 600;;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+        }
+    }
+    .rent{
+        background-color: teal;
+        color: white;
+        i{
+            color: teal;
+            background-color: white;
+        }
+        h5{
+            color: white;
+        }
+    }
+}
+
+.auth-form{
+    
+    .auth-wrapper{
+        background: rgba(143,143,143,1);
+background: -moz-linear-gradient(left, rgba(143,143,143,1) 0%, rgba(246,246,246,1) 81%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(143,143,143,1)), color-stop(81%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(left, rgba(143,143,143,1) 0%, rgba(246,246,246,1) 81%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(left, rgba(143,143,143,1) 0%, rgba(246,246,246,1) 81%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(left, rgba(143,143,143,1) 0%, rgba(246,246,246,1) 81%, rgba(255,255,255,1) 100%);
+background: linear-gradient(to right, rgba(143,143,143,1) 0%, rgba(246,246,246,1) 81%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', endColorstr='#ffffff', GradientType=1 );
+        border-radius: 15px;
+        border-top: 6px solid teal;
+        h3{
+            margin: 30px;
+            font-weight: 700;
+            span{
+                color: gold;
+            }
+        }
+        h4{
+            margin: 30px;
+            font-weight: 700;
+            color: teal;
+            font-size: 1.8em; 
+        }
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 30px;
+        label{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        input{
+            
+            height: 50px;
+            border: none;
+            outline: none;
+            padding-left: 15px;
+            font-weight: 600;
+            border-radius: 5px;
+            border-left: 2px solid teal;
+
+            &:focus{
+                border: 1.5px solid teal
+            }
+        }
+        button{
+            width: 30%;
+            margin: 0 auto;
+            border: none;
+            background-color: rgb(224, 193, 12);
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: 1s;
+
+            &:hover{
+                background-color: rgb(216, 184, 2);
+            }
+        }
+    }
+}
+
+#cookies{
+    background-color: rgb(226, 226, 226);
+    width: 90vw;
+    margin: 0 auto;
+    padding: 10px 50px;
+    margin-top: 100px;
+
+    p{
+        font-weight: 600;
+    }
+    #cookies-btns{
+        display: flex;
+        justify-content: center;
+
+        a{
+            text-decoration: none;
+            color: blue;
+            background-color: gold;
+            padding: 8px 15px;
+            margin-left: 30px;
+            
+        }
+
+        button{
+            text-decoration: none;
+            color: blue;
+            background-color: gold;
+            padding: 8px 15px;
+            margin-left: 30px;
+            
+        }
+    }
+}
