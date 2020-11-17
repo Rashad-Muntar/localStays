@@ -20,18 +20,51 @@
     <body>
 
         <header class="ui.sticky">
-            <nav>
-                <a href="/home" class="brand"><span>X</span>CELZS</a>
-                <div class="center">
-                    <a href="/how-it-works">How it works</a>
-                    <a href="/about-us">About us</a>
-                    <a href="/properties">Properties</a>
-                </div>
+            <nav class="social-nav">
+                <div class="social-icons">
+                    <div>
+                        <a href=""><span uk-icon="facebook"></span></a>
+                        <a href=""><span uk-icon="youtube"></span></a>
+                        <a href=""><span uk-icon="twitter"></span></a>
+                        <a href=""><span uk-icon="linkedin"></span></a>
+                        <a href=""><span uk-icon="whatsapp"></span></a>
+                        <a href=""><span uk-icon="instagram"></span></a>
+                        <a href=""><span uk-icon="receiver"></span></a>
+                        <a href=""><span uk-icon="mail"></span></a>
+                    </div>
+                <a class="subscribe" href="/subscribe">Subscribe Now</a>
+            </div>
+            
+            </nav>
+            <nav class="logo-nav">
+                <a href="/home" class="brand"><img src="/images/logo5.png" alt=""></a>
+                <ul class="center">
+                    <li class="hwiks">How it works
+                        <ul class="hwiks-drps">
+                            <li><a href="/how-it-works">How it works</a></li>
+                            <li><a href="/find-property">Property Finding</a></li>
+                            <li><a href="/property-Contracting">Property Contracting</a></li>
+                            <li><a href="/property-design">Property Design</a></li>
+                            <li><a href="/FAQS">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="properties">Properties
+                        <ul class="props-drps">
+                            <li><a href="/short-let">Short Let</a></li>
+                            <li><a href="/rent">Rent</a></li>
+                            <li><a href="/buy">Buy</a></li>
+                            <li><a href="/build">Build</a></li>
+                            <li><a href="/design">Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/insight">Insight</a></li>
+                    <li><a href="/about-us">About us</a></li>
+                </ul>
                 <div class="right">
                 <% if(currentUser){ %>
                     <a href="/xcelzs/logout">Log Out</a>
                <% } else{ %>
-                    <a href="#signup" uk-toggle class="auth">Sign Up</a>
+                    <a href="#signup" uk-toggle class="auth" id="sign-up">Sign Up</a>
                     <a href="#login" uk-toggle class="auth" id="login">Log In</a>
                <% }%>
                 </div>

@@ -1,3 +1,8 @@
+$primaryColor: #fac710;
+$textColor: rgb(107, 107, 107);
+$hover: #f8d24a;
+$navBackground: rgb(241, 241, 241);
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -28,126 +33,134 @@ html {
 
 header{
     width: 100vw;
-    height: 70px;
-    position: absolute;
     border-bottom: 1px solid rgb(197, 197, 197);
+    background-color: rgb(241, 241, 241);
 
-    nav{
+    .social-nav{
+        width: 100%;
+        border-bottom: 1px solid rgb(139, 139, 139);
         display: flex;
-        width: 65vw;
-        height: 100%;
         justify-content: space-between;
         align-items: center;
-        margin: 0 auto;
-        
-        .brand{
-            text-decoration: none;
-            color: white;
-            font-size: 1.3em;
-            font-weight: 800;
-            span{
-                color: gold;
-            }
-        }
-        .center{
-            a{
-                font-size: 1.1em;
-                color: white;
-                text-decoration: none;
-                margin-left: 25px;
-                font-weight: 600;
-                padding-bottom: 7%;
-                transition: 0.3s;
-                &:hover{
-                    border-bottom: 4px solid gold;
-                    
+        height: 60px;
+
+        .social-icons{
+            display: flex;
+            width: 65vw;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+
+            div{
+                a{
+                    text-decoration: none;
+                    color: $textColor;
+                    margin-right: 30px
                 }
             }
-          
-
-        }
-
-        .right{
-            a{
-                font-size: 1.1em;
-                color: white;
+            .subscribe{
                 text-decoration: none;
-                margin-left: 25px;
-                font-weight: 600;
-            }
-            #login{
-                background-color: teal;
-                padding: 8px 17px;
+                background-color:  $primaryColor;
+                color: rgb(41, 41, 41);
+                padding: 8px 25px;
                 border-radius: 5px;
+
                 &:hover{
-                    background-color: rgb(14, 151, 151);
+                     background-color: $hover;
                 }
             }
         }
     }
- 
+    .logo-nav{
+        width: 65vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+
+        .brand{
+            width: 150px;
+        }
+
+.center{
+    display: flex;
+
+    li{
+        list-style: none;
+        position: relative;
+        margin-right: 50px;
+        font-weight: 600;
+        color: $textColor;
+        cursor: pointer;
+
+        &:hover{
+            color: black;
+        }
+
+        .props-drps{
+            width: 150px;
+        }
+
+        a{
+            text-decoration: none;
+            color: $textColor;
+        }
+
+        ul{
+            position: absolute;
+            background-color: $navBackground;
+            padding: 0;
+            display: none;
+            transition: 1s;
+            width: 220px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom: 5px solid $primaryColor;
+
+            li{
+                font-weight: 500;
+                padding: 10px 15px;
+                margin: 0;
+            }
+
+            li:hover{
+                color: $primaryColor
+            }
+        }
+    }
+    .hwiks:hover .hwiks-drps{
+        display: block;
+    }
+
+    .properties:hover .props-drps{
+        display: block;
+    }
+
 }
 
-.header2{
-    width: 100vw;
-    height: 70px;
-    position: relative;
-    border-bottom: 1px solid rgb(197, 197, 197);
-
-    nav{
-        display: flex;
-        width: 65vw;
-        height: 100%;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        
-        .brand{
-            text-decoration: none;
-            color: rgb(37, 37, 37);
-            font-size: 1.3em;
-            font-weight: 800;
-            span{
-                color: gold;
-            }
-        }
-        .center{
-            a{
-                font-size: 1.1em;
-                color: rgb(37, 37, 37);
-                text-decoration: none;
-                margin-left: 25px;
-                font-weight: 600;
-                padding-bottom: 7%;
-                transition: 0.3s;
-                &:hover{
-                    border-bottom: 4px solid gold;
-                    
-                }
-            }
-          
-
-        }
-
-        .right{
-            a{
-                font-size: 1.1em;
-                color: white;
-                text-decoration: none;
-                margin-left: 25px;
-                font-weight: 600;
-            }
-            #login{
-                background-color: teal;
-                padding: 8px 17px;
-                border-radius: 5px;
-                &:hover{
-                    background-color: rgb(14, 151, 151);
-                }
-            }
+.right{
+    a{
+        font-size: 1.1em;
+        color: rgb(41, 41, 41);
+        text-decoration: none;
+        margin-left: 25px;
+        font-weight: 600;
+    }
+    #login{
+        background-color: $primaryColor;
+        padding: 8px 17px;
+        border-radius: 5px;
+        &:hover{
+            background-color: $hover;
         }
     }
- 
+    #sign-up{
+        color: $textColor;
+    }
+}   
+    }
 }
 
 .hero{
@@ -181,14 +194,14 @@ header{
             }
             a{
                 text-decoration: none;
-                background-color: teal;
-                color: white;
+                background-color: $primaryColor;
+                color: rgb(37, 37, 37);
                 letter-spacing: 2px;
                 font-weight: 600;
                 padding: 8px 15px;
              
                 &:hover{
-                    background-color: rgb(14, 151, 151);
+                    background-color: $hover;
                 } 
             }
            
@@ -213,7 +226,7 @@ header{
             }
             .submit{
                 height: 100%;
-                background-color: gold;
+                background-color: $primaryColor;
                 border:none;
                 width: 20%;
                 right: 0;
@@ -222,7 +235,7 @@ header{
                     outline: none;
                 }
                 &:hover{
-                    background-color: rgb(226, 194, 9);
+                    background-color: $hover;
                 }
             }
         }
@@ -248,71 +261,6 @@ header{
     
 }
 
-.facts{
-    width: 65vw;
-    margin: 0 auto;
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-between;
-
-    & > div{
-        width: 30%;
-        height: 220px;
-        background-color: rgb(229, 245, 239);
-        color:rgb(51, 51, 51);
-        border-radius: 7px;
-        border-top-right-radius: 100px;
-        text-align: center;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        a{
-           margin: 0 auto;
-           border: none;
-           background-color: gold;
-           font-weight: 600;
-           border-radius: 5px;
-           text-decoration: none;
-           color:rgb(51, 51, 51);
-           padding: 7px 15px;
-           margin-top: 10px;
-        }
-        i{
-            background-color: teal;
-            color: white;
-            padding: 30px 30px;
-            border-radius: 100%;
-            font-size: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        h5{
-            margin: 0;
-            padding: 0;
-            margin-top: 10px;
-            font-weight: 600;;
-        }
-        p{
-            margin: 0;
-            padding: 0;
-            margin-top: 10px;
-        }
-    }
-    .rent{
-        background-color: teal;
-        color: white;
-        i{
-            color: teal;
-            background-color: white;
-        }
-        h5{
-            color: white;
-        }
-    }
-}
 
 .auth-form{
     
@@ -331,7 +279,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', end
             margin: 30px;
             font-weight: 700;
             span{
-                color: gold;
+                color: $primaryColor;
             }
         }
         h4{
@@ -368,7 +316,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', end
             width: 30%;
             margin: 0 auto;
             border: none;
-            background-color: rgb(224, 193, 12);
+            background-color: $primaryColor;
             font-weight: 600;
             padding: 10px 20px;
             border-radius: 5px;
@@ -376,7 +324,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', end
             transition: 1s;
 
             &:hover{
-                background-color: rgb(216, 184, 2);
+                background-color: $hover;
             }
         }
     }
@@ -399,7 +347,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', end
         a{
             text-decoration: none;
             color: blue;
-            background-color: gold;
+            background-color: $primaryColor;
             padding: 8px 15px;
             margin-left: 30px;
             
@@ -408,10 +356,127 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', end
         button{
             text-decoration: none;
             color: blue;
-            background-color: gold;
+            background-color:$primaryColor;
             padding: 8px 15px;
             margin-left: 30px;
             
         }
     }
 }
+
+
+.fact{
+    width: 65vw;
+    margin: 0 auto;
+    .uk-slideshow-items{
+        color: black !important;
+        & > div{
+            z-index: 2;
+            color: black !important;
+    .facts-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    #rate-circle{
+        background-color: gray;;
+    }
+            .circle{
+                height: 350px;
+                width: 350px;
+                background-color: rgb(221, 221, 221);
+                border: 60px solid $primaryColor;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column; 
+                font-size: 2em;
+                color: gray;
+                font-weight: 700;
+                border-radius: 100%;
+                padding: 7px;
+                line-height: 45px;
+                text-align: center;
+
+                p{
+                    
+                    color: white;
+                    font-weight: 700;
+                }
+                .rate{
+                    i{
+                        color: $primaryColor;
+                        font-size: 0.9em !important;
+                    }
+                }
+            }
+            .right-text{
+                width: 30%;
+                margin-left: 50px;
+                margin-right: 20px;
+            }
+
+            .left-text{
+                width: 30%;
+                margin-right: 50px;
+                margin-left: 20px;
+                text-align: right;
+            }
+        }
+    }
+    .arr{
+        color: goldenrod;
+        font-weight: 600;;
+    }
+    .uk-dotnav{
+        color: gold !important;
+        border-color: gold !important;
+        
+    }
+}
+
+footer{
+    width: 100vw;
+    background-color: rgb(231, 231, 231);
+
+    .footer-wrapper{
+        width: 65vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > div{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin-right: 30px;
+            padding: 30px 0;
+
+            h5{
+                font-size: 1.3em;
+            }
+            img{
+                width: 150px;
+            }
+            
+            a{
+                text-decoration: none;
+                color: rgb(56, 56, 56);
+                padding-bottom: 10px;
+                font-size: 1.2em;
+                &:hover{
+                    color: rgb(49, 43, 6);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+  

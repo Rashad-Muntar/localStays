@@ -8,6 +8,7 @@ const User = require("./app_api/models/userModel")
 const passport = require("passport")
 const localStrategy = require("passport-local")
 const passportLocalMongoose = require("passport-local-mongoose")
+
 let url = process.env.dburl || "mongodb://localhost/EXCELZ"
 mongoose.connect(url, {
     useNewUrlParser: true,
