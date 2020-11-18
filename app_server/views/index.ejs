@@ -1,5 +1,7 @@
 <%- include("./partials/header") %>
-<section class="hero" style="background-image: url(images/room1.png);">
+
+
+<!-- <section class="hero" style="background-image: url(images/room1.png);">
     <div class="head-text-wrap">
         <div class="text-btn">
         <h3 class="head-text">Finding/building a place to <span>stay, live</span> and/or  work can be stress-free</h3>
@@ -10,7 +12,55 @@
             <input type="submit" name="" id="" value="search" class="submit"> 
         </form>
     </div>
-</section>
+</section> -->
+
+<div class="uk-position-relative uk-visible-toggle uk-light jumbo" tabindex="-1" uk-slideshow="animation: push; min-height: 300; max-height: 600; autoplay: true">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="images/room1.png" alt="" uk-cover>
+            <div class=" uk-position-small head-text-wrap">
+                <div class="text">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0" class="head-text">Finding/building a place to <span>stay, live</span> and/or  work can be stress-free</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0"><a href="">Find out more</a></p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/home3.jpg" alt="" uk-cover>
+            <div class=" uk-position-small head-text-wrap">
+                <div class="text">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0" class="head-text">Finding/building place to <span>stay, live</span> and/or work can save you time & money</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0"><a href="">Find out more</a></p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/home5.jpg" alt="" uk-cover>
+            <div class=" uk-position-small head-text-wrap">
+                <div class="text">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0" class="head-text" >Finding a place to <span>stay, live</span> and/or work can be easy & safe</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0"><a href="">Find out more</a></p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/home9.jpg" alt="" uk-cover>
+            <div class=" uk-position-small head-text-wrap">
+                <div class="text">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0" class="head-text">Finding a place to <span>stay, live</span> and/or work can have your privacy as paramount consideration</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0"><a href="">Find out more</a></p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+
 <main>
     <section class="partner-wrapper">
         <div class="partners">
@@ -70,7 +120,6 @@
                     </div>
                 </div>
             </div>
-    
             <a class="uk-position-center-left-out arr" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right-out arr" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
     

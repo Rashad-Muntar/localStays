@@ -32,7 +32,8 @@
                         <a href=""><span uk-icon="receiver"></span></a>
                         <a href=""><span uk-icon="mail"></span></a>
                     </div>
-                <a class="subscribe" href="/subscribe">Subscribe Now</a>
+      
+                <a href="#signup" uk-toggle class="subscribe" id="sign-up">Subscribe Now</a>
             </div>
             
             </nav>
@@ -57,15 +58,21 @@
                             <li><a href="/design">Design</a></li>
                         </ul>
                     </li>
-                    <li><a href="/insight">Insight</a></li>
+                    <li class="insight">Insights
+                        <ul class="insight-drps">
+                            <li><a href="/average-housing-prices"> Average housing prices</a></li>
+                            <li><a href="/home-finance-solutions">Home Finance Solutions</a></li>
+                            <li><a href="/things-to-Consider">Things to Consider</a></li>
+                            <li><a href="/guide">Guides (How Tos)</a></li>
+                        </ul>
+                    </li>
                     <li><a href="/about-us">About us</a></li>
                 </ul>
                 <div class="right">
                 <% if(currentUser){ %>
                     <a href="/xcelzs/logout">Log Out</a>
                <% } else{ %>
-                    <a href="#signup" uk-toggle class="auth" id="sign-up">Sign Up</a>
-                    <a href="#login" uk-toggle class="auth" id="login">Log In</a>
+                    <a href="#login" uk-toggle class="auth" id="login">My Properties</a>
                <% }%>
                 </div>
             </nav>

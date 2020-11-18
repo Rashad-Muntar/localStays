@@ -34,4 +34,20 @@ router.get("/design", indexCtrl.design)
 
 router.get("/subscribe", indexCtrl.subscribe)
 
+router.get("/ref", indexCtrl.refer)
+
+router.get("/privacy-policy", indexCtrl.privacy)
+
+router.get("/terms", indexCtrl.terms)
+
+router.get("/cookies", indexCtrl.cookies)
+
+router.get("/average-housing-prices", indexCtrl.avhp)
+
+router.get("/home-finance-solutions", indexCtrl.hfs)
+
+router.get("/things-to-Consider", indexCtrl.tToCon)
+
+router.get("/guide", indexCtrl.guide)
+
 module.exports = router

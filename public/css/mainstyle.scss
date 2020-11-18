@@ -2,10 +2,12 @@ $primaryColor: #fac710;
 $textColor: rgb(107, 107, 107);
 $hover: #f8d24a;
 $navBackground: rgb(241, 241, 241);
+$signatureColor: #d9c001;
 
 body{
     font-family: 'Roboto', sans-serif;
 }
+
 * {
 	margin: 0;
 	padding: 0;
@@ -65,6 +67,7 @@ header{
                 color: rgb(41, 41, 41);
                 padding: 8px 25px;
                 border-radius: 5px;
+                font-weight: 600;
 
                 &:hover{
                      background-color: $hover;
@@ -118,6 +121,7 @@ header{
             border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;
             border-bottom: 5px solid $primaryColor;
+            z-index: 1;
 
             li{
                 font-weight: 500;
@@ -126,7 +130,9 @@ header{
             }
 
             li:hover{
-                color: $primaryColor
+                color: $primaryColor;
+                background-color: rgb(230, 230, 230);
+                
             }
         }
     }
@@ -137,6 +143,11 @@ header{
     .properties:hover .props-drps{
         display: block;
     }
+
+    .insight:hover .insight-drps{
+        display: block;
+    }
+
 
 }
 
@@ -163,84 +174,132 @@ header{
     }
 }
 
-.hero{
-    height: 600px;
-    width: 100vw;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
 
+.jumbo{
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.uk-slideshow-items{
     .head-text-wrap{
-        width: 65vw;
         height: 100%;
+        width: 65vw;
         margin: 0 auto;
         display: flex;
+        justify-content: center;
         align-items: center;
-        .text-btn{
-                width: 70%;
-                border-right: 1px solid rgb(214, 214, 214);
-                margin-right: 40px;
-            h3{
-                color: white;
-                font-weight: 700;
-                font-family: 'Roboto', sans-serif;
-                font-size: 3em;
-                line-height: 60px;
-                letter-spacing: 2px;
-                span{
-                    color: rgb(14, 151, 151)
-                }
-            }
-            a{
-                text-decoration: none;
-                background-color: $primaryColor;
-                color: rgb(37, 37, 37);
-                letter-spacing: 2px;
-                font-weight: 600;
-                padding: 8px 15px;
-             
-                &:hover{
-                    background-color: $hover;
-                } 
-            }
-           
-        }
-   
-        .search-wrapper{
-            width: 50%;
-            height: 50px;
-            background-color: white;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: space-between;
 
-            .search{
-                border: none;
-                height: 100%;
-                width: 80%;
-                padding-left: 15px;
-                &:focus{
-                    outline: none;
-                }
+        .text{
+
+            .head-text{
+                color: white;
+                font-weight: 700 !important;
+                font-family: 'Roboto', sans-serif;
+                font-size: 3em !important;
+                line-height: 60px;
+                letter-spacing: 2px !important;
+                width: 70%;
+                span{
+                    color: $primaryColor;
+                };
             }
-            .submit{
-                height: 100%;
+            p{
                 background-color: $primaryColor;
-                border:none;
-                width: 20%;
-                right: 0;
+                padding: 10px 15px;
                 font-weight: 600;
-                &:focus{
-                    outline: none;
-                }
+                font-size: 1.1em;
+                letter-spacing: 2px;
+                width: 160px;
+                border-radius: 7px;
+                text-align: center;
+
                 &:hover{
                     background-color: $hover;
+                }
+                
+                a{
+                    text-decoration: none;
+                    color: rgb(37, 37, 37);
                 }
             }
         }
     }
+  
 }
+
+//     .head-text-wrap{
+//         width: 65vw;
+//         height: 100%;
+//         margin: 0 auto;
+//         display: flex;
+//         align-items: center;
+
+//         .text-btn{
+//                 width: 70%;
+//                 border-right: 1px solid rgb(214, 214, 214);
+//                 margin-right: 40px;
+//             .head-text{
+//                 color: white;
+//                 font-weight: 700 !important;
+//                 font-family: 'Roboto', sans-serif;
+//                 font-size: 3em;
+//                 line-height: 60px;
+//                 letter-spacing: 2px;
+//                 span{
+//                     color: #d9c001
+//                 }
+//             }
+//             a{
+//                 text-decoration: none;
+//                 background-color: $primaryColor;
+//                 color: rgb(37, 37, 37);
+//                 letter-spacing: 2px;
+//                 font-weight: 600;
+//                 padding: 8px 15px;
+             
+//                 &:hover{
+//                     background-color: $hover;
+//                 } 
+//             }
+           
+//         }
+   
+//         .search-wrapper{
+//             width: 50%;
+//             height: 50px;
+//             background-color: white;
+//             box-sizing: border-box;
+//             display: flex;
+//             justify-content: space-between;
+
+//             .search{
+//                 border: none;
+//                 height: 100%;
+//                 width: 80%;
+//                 padding-left: 15px;
+//                 &:focus{
+//                     outline: none;
+//                 }
+//             }
+//             .submit{
+//                 height: 100%;
+//                 background-color: $primaryColor;
+//                 border:none;
+//                 width: 20%;
+//                 right: 0;
+//                 font-weight: 600;
+//                 &:focus{
+//                     outline: none;
+//                 }
+//                 &:hover{
+//                     background-color: $hover;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
 .partner-wrapper{
     width: 100vw;
     border-bottom: 1px solid rgb(218, 218, 218);
@@ -415,6 +474,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', end
                 width: 30%;
                 margin-left: 50px;
                 margin-right: 20px;
+                font-size: 1.2em;
+                font-weight: 600;
+                color: $textColor;
             }
 
             .left-text{
@@ -422,6 +484,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', end
                 margin-right: 50px;
                 margin-left: 20px;
                 text-align: right;
+                font-size: 1.2em;
+                font-weight: 600;
+                color: $textColor;
             }
         }
     }

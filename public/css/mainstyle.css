@@ -75,6 +75,7 @@ header .social-nav .social-icons .subscribe {
   color: #292929;
   padding: 8px 25px;
   border-radius: 5px;
+  font-weight: 600;
 }
 
 header .social-nav .social-icons .subscribe:hover {
@@ -139,6 +140,7 @@ header .logo-nav .center li ul {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom: 5px solid #fac710;
+  z-index: 1;
 }
 
 header .logo-nav .center li ul li {
@@ -149,6 +151,7 @@ header .logo-nav .center li ul li {
 
 header .logo-nav .center li ul li:hover {
   color: #fac710;
+  background-color: #e6e6e6;
 }
 
 header .logo-nav .center .hwiks:hover .hwiks-drps {
@@ -156,6 +159,10 @@ header .logo-nav .center .hwiks:hover .hwiks-drps {
 }
 
 header .logo-nav .center .properties:hover .props-drps {
+  display: block;
+}
+
+header .logo-nav .center .insight:hover .insight-drps {
   display: block;
 }
 
@@ -181,103 +188,58 @@ header .logo-nav .right #sign-up {
   color: #6b6b6b;
 }
 
-.hero {
-  height: 600px;
+.jumbo {
   width: 100vw;
-  background-size: cover;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0 auto;
 }
 
-.hero .head-text-wrap {
-  width: 65vw;
+.uk-slideshow-items .head-text-wrap {
   height: 100%;
+  width: 65vw;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.hero .head-text-wrap .text-btn {
-  width: 70%;
-  border-right: 1px solid #d6d6d6;
-  margin-right: 40px;
-}
-
-.hero .head-text-wrap .text-btn h3 {
+.uk-slideshow-items .head-text-wrap .text .head-text {
   color: white;
-  font-weight: 700;
+  font-weight: 700 !important;
   font-family: 'Roboto', sans-serif;
-  font-size: 3em;
+  font-size: 3em !important;
   line-height: 60px;
+  letter-spacing: 2px !important;
+  width: 70%;
+}
+
+.uk-slideshow-items .head-text-wrap .text .head-text span {
+  color: #fac710;
+}
+
+.uk-slideshow-items .head-text-wrap .text p {
+  background-color: #fac710;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 1.1em;
   letter-spacing: 2px;
+  width: 160px;
+  border-radius: 7px;
+  text-align: center;
 }
 
-.hero .head-text-wrap .text-btn h3 span {
-  color: #0e9797;
+.uk-slideshow-items .head-text-wrap .text p:hover {
+  background-color: #f8d24a;
 }
 
-.hero .head-text-wrap .text-btn a {
+.uk-slideshow-items .head-text-wrap .text p a {
   text-decoration: none;
-  background-color: #fac710;
   color: #252525;
-  letter-spacing: 2px;
-  font-weight: 600;
-  padding: 8px 15px;
-}
-
-.hero .head-text-wrap .text-btn a:hover {
-  background-color: #f8d24a;
-}
-
-.hero .head-text-wrap .search-wrapper {
-  width: 50%;
-  height: 50px;
-  background-color: white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.hero .head-text-wrap .search-wrapper .search {
-  border: none;
-  height: 100%;
-  width: 80%;
-  padding-left: 15px;
-}
-
-.hero .head-text-wrap .search-wrapper .search:focus {
-  outline: none;
-}
-
-.hero .head-text-wrap .search-wrapper .submit {
-  height: 100%;
-  background-color: #fac710;
-  border: none;
-  width: 20%;
-  right: 0;
-  font-weight: 600;
-}
-
-.hero .head-text-wrap .search-wrapper .submit:focus {
-  outline: none;
-}
-
-.hero .head-text-wrap .search-wrapper .submit:hover {
-  background-color: #f8d24a;
 }
 
 .partner-wrapper {
@@ -488,6 +450,9 @@ header .logo-nav .right #sign-up {
   width: 30%;
   margin-left: 50px;
   margin-right: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #6b6b6b;
 }
 
 .fact .uk-slideshow-items > div .left-text {
@@ -495,6 +460,9 @@ header .logo-nav .right #sign-up {
   margin-right: 50px;
   margin-left: 20px;
   text-align: right;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #6b6b6b;
 }
 
 .fact .arr {

@@ -31,7 +31,7 @@ const FAQS = (req, res) =>{
 }
 
 const short = (req, res) =>{
-    res.render("products/shortLet")
+    res.render("products/shorLet")
 }
 
 const rent = (req, res) =>{
@@ -54,6 +54,37 @@ const subscribe =(req, res) =>{
     res.render("products/subscribe")
 }
 
+const refer =(req, res) =>{
+    res.render("products/ref")
+}
+
+const terms =(req, res) =>{
+    res.render("products/terms")
+}
+
+const privacy =(req, res) =>{
+    res.render("products/privacy")
+}
+
+const cookies =(req, res) =>{
+    res.render("products/cookie")
+}
+
+const avhp = (req, res) => {
+    res.render("products/averageHousing")
+}
+const hfs = (req, res) => {
+    res.render("products/homeSolutions")
+}
+
+const tToCon = (req, res) => {
+    res.render("products/thingstoConsider")
+}
+
+const guide = (req, res) => {
+    res.render("products/guide")
+}
+
 module.exports = {
     home,
     aboutUs,
@@ -68,5 +99,13 @@ module.exports = {
     buy,
     build,
     design,
-    subscribe
+    subscribe,
+    refer,
+    terms,
+    privacy,
+    cookies,
+    avhp,
+    guide,
+    tToCon,
+    hfs
 }
