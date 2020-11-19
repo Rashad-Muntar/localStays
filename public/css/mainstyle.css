@@ -121,7 +121,7 @@ header .logo-nav .center li:hover {
 }
 
 header .logo-nav .center li .props-drps {
-  width: 150px;
+  width: 180px;
 }
 
 header .logo-nav .center li a {
@@ -136,7 +136,7 @@ header .logo-nav .center li ul {
   display: none;
   -webkit-transition: 1s;
   transition: 1s;
-  width: 220px;
+  width: 180px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom: 5px solid #fac710;
@@ -560,7 +560,7 @@ footer .copy-right p {
   bottom: -100%;
   left: 0;
   right: 0;
-  background-color: #fac710;
+  background-color: #f1f1f1;
   padding-top: 10px;
   -webkit-transition: 400ms;
   transition: 400ms;
@@ -584,20 +584,28 @@ footer .copy-right p {
 }
 
 .cookies .cookie-content #cookies-btns a {
-  background-color: #47c258;
+  background-color: #fac710;
   padding: 10px 30px;
-  color: white;
+  color: #6b6b6b;
   border-radius: 5px;
 }
 
+.cookies .cookie-content #cookies-btns a:hover {
+  background-color: #f8d24a;
+}
+
 .cookies .cookie-content #cookies-btns button {
-  background-color: #47c258;
+  background-color: #fac710;
   padding: 10px 30px;
-  color: white;
+  color: #6b6b6b;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   font-weight: 600;
+}
+
+.cookies .cookie-content #cookies-btns button:hover {
+  background-color: #f8d24a;
 }
 
 .active {

@@ -103,7 +103,7 @@ header{
         }
 
         .props-drps{
-            width: 150px;
+            width: 180px;
         }
 
         a{
@@ -117,7 +117,7 @@ header{
             padding: 0;
             display: none;
             transition: 1s;
-            width: 220px;
+            width: 180px;
             border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;
             border-bottom: 5px solid $primaryColor;
@@ -557,7 +557,7 @@ footer{
     bottom: -100%;
     left: 0;
     right: 0;
-    background-color: $primaryColor;
+    background-color: $navBackground;
     padding-top: 10px;
     transition: 400ms;
     
@@ -572,19 +572,27 @@ footer{
             display: flex;
             justify-content: space-between;
             a{
-                background-color: rgb(71, 194, 88);
+                background-color: $primaryColor;
                 padding: 10px 30px;
-                color: white;
+                color: $textColor;
                 border-radius: 5px;
+
+                &:hover{
+                    background-color: $hover;
+                }
             }
             button{
-                background-color: rgb(71, 194, 88);
+                background-color: $primaryColor;
                 padding: 10px 30px;
-                color: white;
+                color: $textColor;
                 border-radius: 5px;
                 border: none;
                 cursor: pointer;
                 font-weight: 600;
+
+                &:hover{
+                    background-color: $hover;
+                }
             }
         }
     }
