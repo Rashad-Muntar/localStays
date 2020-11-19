@@ -19,7 +19,7 @@
 
     <body>
 
-        <header class="ui.sticky">
+        <header uk-sticky>
             <nav class="social-nav">
                 <div class="social-icons">
                     <div>
@@ -66,7 +66,22 @@
                             <li><a href="/guide">Guides (How Tos)</a></li>
                         </ul>
                     </li>
-                    <li><a href="/about-us">About us</a></li>
+
+                    <li class="about-us"><a href="/about-us">Affiliates
+                        <ul class="aboutUs-drps">
+                            <li><a href="#">What We Do</a></li>
+                            <li><a href="#">Why Us</a></li>
+                            <li><a href="#">Connect With Us</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="about-us"><a href="/about-us">About us
+                        <ul class="aboutUs-drps">
+                            <li><a href="#">What We Do</a></li>
+                            <li><a href="#">Why Us</a></li>
+                            <li><a href="#">Connect With Us</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <div class="right">
                 <% if(currentUser){ %>

@@ -166,6 +166,10 @@ header .logo-nav .center .insight:hover .insight-drps {
   display: block;
 }
 
+header .logo-nav .center .about-us:hover .aboutUs-drps {
+  display: block;
+}
+
 header .logo-nav .right a {
   font-size: 1.1em;
   color: #292929;
@@ -200,12 +204,56 @@ header .logo-nav .right #sign-up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uk-slideshow-items .head-text-wrap .dot {
+  z-index: 2;
+  width: 30%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  left: 68% !important;
+  top: 15% !important;
+}
+
+.uk-slideshow-items .head-text-wrap .dot .uk-dotnav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uk-slideshow-items .head-text-wrap .dot .uk-dotnav li {
+  padding-bottom: 40px;
+  color: #fac710;
+  font-size: 1.5em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.uk-slideshow-items .head-text-wrap .dot .uk-dotnav li a {
+  border-color: #fac710 !important;
+  height: 50px;
+  border-radius: 0;
+  width: 4px;
+}
+
+.uk-slideshow-items .head-text-wrap .text {
+  position: relative !important;
 }
 
 .uk-slideshow-items .head-text-wrap .text .head-text {
@@ -341,43 +389,6 @@ header .logo-nav .right #sign-up {
   background-color: #f8d24a;
 }
 
-#cookies {
-  background-color: #e2e2e2;
-  width: 90vw;
-  margin: 0 auto;
-  padding: 10px 50px;
-  margin-top: 100px;
-}
-
-#cookies p {
-  font-weight: 600;
-}
-
-#cookies #cookies-btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#cookies #cookies-btns a {
-  text-decoration: none;
-  color: blue;
-  background-color: #fac710;
-  padding: 8px 15px;
-  margin-left: 30px;
-}
-
-#cookies #cookies-btns button {
-  text-decoration: none;
-  color: blue;
-  background-color: #fac710;
-  padding: 8px 15px;
-  margin-left: 30px;
-}
-
 .fact {
   width: 65vw;
   margin: 0 auto;
@@ -470,11 +481,6 @@ header .logo-nav .right #sign-up {
   font-weight: 600;
 }
 
-.fact .uk-dotnav {
-  color: gold !important;
-  border-color: gold !important;
-}
-
 footer {
   width: 100vw;
   background-color: #e7e7e7;
@@ -525,5 +531,76 @@ footer .footer-wrapper > div a {
 footer .footer-wrapper > div a:hover {
   color: #312b06;
   font-weight: 500;
+}
+
+footer .copy-right {
+  width: 100vw;
+  height: 40px;
+  background-color: #b9b9b9;
+}
+
+footer .copy-right p {
+  width: 65vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  letter-spacing: 2px;
+}
+
+.cookies {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background-color: #fac710;
+  padding-top: 10px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.cookies .cookie-content {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cookies .cookie-content #cookies-btns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cookies .cookie-content #cookies-btns a {
+  background-color: #47c258;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 5px;
+}
+
+.cookies .cookie-content #cookies-btns button {
+  background-color: #47c258;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.active {
+  bottom: 0;
 }
 /*# sourceMappingURL=mainstyle.css.map */

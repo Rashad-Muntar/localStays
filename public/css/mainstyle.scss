@@ -148,6 +148,9 @@ header{
         display: block;
     }
 
+    .about-us:hover .aboutUs-drps{
+        display: block;
+    }
 
 }
 
@@ -181,16 +184,48 @@ header{
 }
 
 .uk-slideshow-items{
+    
     .head-text-wrap{
         height: 100%;
         width: 65vw;
         margin: 0 auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
-        .text{
+        .dot{
+            z-index: 2;
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            left: 68% !important;
+            top: 15% !important;
 
+            .uk-dotnav{
+               align-items: center;
+
+                li{
+                    padding-bottom: 40px;
+                    color: $primaryColor;
+                    font-size: 1.5em;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+    
+                    a{
+                        border-color: $primaryColor !important;
+                        height: 50px;
+                        border-radius: 0;
+                        width: 4px; 
+                    }
+                }
+            }
+           
+        }
+
+        .text{
+            position: relative !important;
             .head-text{
                 color: white;
                 font-weight: 700 !important;
@@ -199,6 +234,7 @@ header{
                 line-height: 60px;
                 letter-spacing: 2px !important;
                 width: 70%;
+                
                 span{
                     color: $primaryColor;
                 };
@@ -389,41 +425,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', end
     }
 }
 
-#cookies{
-    background-color: rgb(226, 226, 226);
-    width: 90vw;
-    margin: 0 auto;
-    padding: 10px 50px;
-    margin-top: 100px;
-
-    p{
-        font-weight: 600;
-    }
-    #cookies-btns{
-        display: flex;
-        justify-content: center;
-
-        a{
-            text-decoration: none;
-            color: blue;
-            background-color: $primaryColor;
-            padding: 8px 15px;
-            margin-left: 30px;
-            
-        }
-
-        button{
-            text-decoration: none;
-            color: blue;
-            background-color:$primaryColor;
-            padding: 8px 15px;
-            margin-left: 30px;
-            
-        }
-    }
-}
-
-
 .fact{
     width: 65vw;
     margin: 0 auto;
@@ -494,11 +495,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', end
         color: goldenrod;
         font-weight: 600;;
     }
-    .uk-dotnav{
-        color: gold !important;
-        border-color: gold !important;
-        
-    }
 }
 
 footer{
@@ -538,10 +534,64 @@ footer{
             }
         }
     }
+
+    .copy-right{
+        width: 100vw;
+        height: 40px;
+        background-color: rgb(185, 185, 185);
+
+        p{
+            width: 65vw;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            letter-spacing: 2px;
+        }
+    }
 }
 
+.cookies{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: $primaryColor;
+    padding-top: 10px;
+    transition: 400ms;
+    
+    .cookie-content{
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 600;
 
+        #cookies-btns{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            a{
+                background-color: rgb(71, 194, 88);
+                padding: 10px 30px;
+                color: white;
+                border-radius: 5px;
+            }
+            button{
+                background-color: rgb(71, 194, 88);
+                padding: 10px 30px;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                font-weight: 600;
+            }
+        }
+    }
+}
 
-
+.active{
+    bottom: 0;
+}
 
   
