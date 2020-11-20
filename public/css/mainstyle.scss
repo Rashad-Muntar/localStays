@@ -181,10 +181,11 @@ header{
 .jumbo{
     width: 100vw;
     margin: 0 auto;
+    
 }
 
 .uk-slideshow-items{
-    
+
     .head-text-wrap{
         height: 100%;
         width: 65vw;
@@ -227,7 +228,7 @@ header{
         .text{
             position: relative !important;
             .head-text{
-                color: white;
+                color: rgb(36, 36, 36);
                 font-weight: 700 !important;
                 font-family: 'Roboto', sans-serif;
                 font-size: 3em !important;
@@ -258,6 +259,14 @@ header{
                     color: rgb(37, 37, 37);
                 }
             }
+        }
+    }
+    li{
+        
+        img{
+
+            
+
         }
     }
   
@@ -356,71 +365,70 @@ header{
     
 }
 
+.uk-margin-auto-vertical{
+    width: 500px !important;
+}
 
 .auth-form{
     
     .auth-wrapper{
-        background: rgba(143,143,143,1);
-background: -moz-linear-gradient(left, rgba(143,143,143,1) 0%, rgba(246,246,246,1) 81%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(143,143,143,1)), color-stop(81%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(left, rgba(143,143,143,1) 0%, rgba(246,246,246,1) 81%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(left, rgba(143,143,143,1) 0%, rgba(246,246,246,1) 81%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(left, rgba(143,143,143,1) 0%, rgba(246,246,246,1) 81%, rgba(255,255,255,1) 100%);
-background: linear-gradient(to right, rgba(143,143,143,1) 0%, rgba(246,246,246,1) 81%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', endColorstr='#ffffff', GradientType=1 );
+        background-image: url("/images/signUp.png");
+        background-position: center;
+        background-size: 500px;
+        background-repeat: no-repeat;
         border-radius: 15px;
         border-top: 6px solid teal;
-        h3{
-            margin: 30px;
-            font-weight: 700;
-            span{
-                color: $primaryColor;
-            }
+ 
+
+        img{
+            width: 100px;
+
         }
         h4{
-            margin: 30px;
+
             font-weight: 700;
             color: teal;
             font-size: 1.8em; 
         }
     }
     form{
-        display: flex;
+
         justify-content: center;
-        flex-direction: column;
-        padding: 10px 30px;
-        label{
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
+
         input{
-            
-            height: 50px;
-            border: none;
-            outline: none;
-            padding-left: 15px;
+            border: 1px solid $primaryColor;
             font-weight: 600;
             border-radius: 5px;
-            border-left: 2px solid teal;
 
             &:focus{
                 border: 1.5px solid teal
             }
         }
+
         button{
-            width: 30%;
+            width: 100%;
             margin: 0 auto;
             border: none;
-            background-color: $primaryColor;
+            font-size: 1.2em;
             font-weight: 600;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: 1s;
+            padding: 12px 30px;
+            border-radius: 10px;
+            background-color: $primaryColor;
+            color: $textColor;
+            margin-top: 30px;
+            margin-left: 35px;
+            text-align: center;
 
             &:hover{
                 background-color: $hover;
             }
+        }
+
+        select{
+            font-weight: 600;
+            color: $textColor;
+            border-radius: 10px;
+            border: 1px solid $primaryColor;
         }
     }
 }
@@ -602,4 +610,55 @@ footer{
     bottom: 0;
 }
 
+#modal-center{
+    h5{
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.6em;
+    }
+
+    p{
+        font-size: 1.5em;
+        text-align: center;
+    }
   
+}
+.modal-img{
+    width: 400px;
+    margin-left: 10%;
+}
+
+#signup-complete{
+    h5{
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.6em;
+    }
+
+    p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+.btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    a{
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 12px 30px;
+        border-radius: 10px;
+        width: 100vw;
+        background-color: $primaryColor;
+        color: $textColor;
+        text-align: center;
+
+        &:hover{
+            background-color: $hover;
+        }
+    }
+}

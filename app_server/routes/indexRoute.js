@@ -50,4 +50,10 @@ router.get("/things-to-Consider", indexCtrl.tToCon)
 
 router.get("/guide", indexCtrl.guide)
 
+router.get("/sell", indexCtrl.sell)
+
+router.get("/invest", indexCtrl.invest)
+
+router.get("/let", indexCtrl.lettings)
+
 module.exports = router

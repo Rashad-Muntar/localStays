@@ -85,6 +85,15 @@ const guide = (req, res) => {
     res.render("products/guide")
 }
 
+const sell = (req, res) => {
+    res.render("products/sell")
+}
+const invest = (req, res) => {
+    res.render("products/invest")
+}
+const lettings = (req, res) => {
+    res.render("products/let")
+}
 module.exports = {
     home,
     aboutUs,
@@ -107,5 +116,8 @@ module.exports = {
     avhp,
     guide,
     tToCon,
-    hfs
+    hfs,
+    sell,
+    invest,
+    lettings
 }

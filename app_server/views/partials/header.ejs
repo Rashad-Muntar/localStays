@@ -42,10 +42,10 @@
                 <ul class="center">
                     <li class="hwiks">How it works
                         <ul class="hwiks-drps">
-                            <li><a href="/how-it-works">How it works</a></li>
-                            <li><a href="/find-property">Property Finding</a></li>
-                            <li><a href="/property-Contracting">Property Contracting</a></li>
-                            <li><a href="/property-design">Property Design</a></li>
+                            <li><a href="/how-it-works">About Our Services</a></li>
+                            <li><a href="/find-property">Service Fees</a></li>
+                            <li><a href="/property-Contracting">Getting Started</a></li>
+                            <li><a href="/property-design">Why it will Work</a></li>
                             <li><a href="/FAQS">FAQs</a></li>
                         </ul>
                     </li>
@@ -98,27 +98,86 @@
             </nav>
         </header>
 
-       
 
+<!-- modal one -->
+<div id="modal-center" class="uk-flex-top auth-form" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h5>Don't Know what you are looking for?</h5>
+        <img src="/images/modalimg.png" alt="" class="modal-img">
+        <p>Join our free no obligation weekly webinars for a friendly  chat to discuss your options.</p>
+        <div class="btn-wrapper">
+            <a href="#signup" uk-toggle>Sign Up</a>
+        </div>
+        
+    </div>
+</div>        
+
+<!-- modal two -->
         <div id="signup" class="uk-flex-top auth-form" uk-modal>
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical auth-wrapper">
         
                 <button class="uk-modal-close-default" type="button" uk-close></button>
-                <h3><span>X</span>CELZS</h3>
+                <img src="images/logo3.png" alt="">
                 <h4>Hello! <br>Lets get your account set up</h4>
-                <form action="/xcelzs/signup" method="POST">
-                    <label for="">Enter username</label>
-                    <input type="text" name="username" placeholder="Enter Username">
-                    <label for="">Enter e-mail</label>
-                    <input type="email" name="email" placeholder="enter E-mail">
-                    <label for="">Enter password</label>
-                    <input type="password" name="password" placeholder="Enter Passwoord">
-                    <button>SIGN UP</button>
+
+                <form action=""  uk-grid>
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="text" name="username" placeholder="Enter First Name">
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="text" name="last" placeholder="Enter Last name">
+                    </div>
+
+                    <div class="uk-width-1-1">
+                        <input class="uk-input" type="email" name="email" placeholder="Enter E-mail">
+                    </div>
+
+                    <div class="uk-width-1-1">
+                        <input class="uk-input" type="text" placeholder="What's app">
+                    </div>
+
+                    <div class="uk-margin uk-width-1-1">
+                            <select class="uk-input">
+                                <option>I want to</option>
+                                <option>Short Let</option>
+                                <option>Rent</option>
+                                <option>Buy</option>
+                                <option>Build</option>
+                                <option>Design</option>
+                                <option>Sell</option>
+                                <option>Let</option>
+                                <option>Invest</option>
+                            </select>
+                    </div>
+                   
+                    <div class="uk-width-1-1">
+                        <input class="uk-input" type="password" name="password" placeholder="Enter password">
+                    </div>
+
+                    <button class="signup-btn">SIGN UP</button>
                 </form>
         
             </div>
         </div>
+    
+<!-- modal three     -->
+        <div id="signup-complete" class="uk-flex-top auth-form" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <h5>Thank You</h5>
+                <img src="/images/congrats.png" alt="" class="modal-img">
+                <p>Email will be send to you within 48 hours with the webinar details.</p>
+                <div class="btn-wrapper">
+                    <a href="#" class="uk-modal-close" type="button">Close</a>
+                </div>
+                
+            </div>
+    </div>
+    
+<!-- Log in -->
         <div id="login" class="uk-flex-top auth-form" uk-modal>
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical auth-wrapper">
         
@@ -166,6 +225,4 @@
             </div>
         </div>
     </section> -->
-
-    
  

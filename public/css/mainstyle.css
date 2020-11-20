@@ -257,7 +257,7 @@ header .logo-nav .right #sign-up {
 }
 
 .uk-slideshow-items .head-text-wrap .text .head-text {
-  color: white;
+  color: #242424;
   font-weight: 700 !important;
   font-family: 'Roboto', sans-serif;
   font-size: 3em !important;
@@ -313,59 +313,39 @@ header .logo-nav .right #sign-up {
   height: 100px;
 }
 
+.uk-margin-auto-vertical {
+  width: 500px !important;
+}
+
 .auth-form .auth-wrapper {
-  background: #8f8f8f;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #8f8f8f), color-stop(81%, #f6f6f6), color-stop(100%, white));
-  background: -webkit-gradient(linear, left top, right top, from(#8f8f8f), color-stop(81%, #f6f6f6), to(white));
-  background: linear-gradient(to right, #8f8f8f 0%, #f6f6f6 81%, white 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8f8f', endColorstr='#ffffff', GradientType=1 );
+  background-image: url("/images/signUp.png");
+  background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
   border-radius: 15px;
   border-top: 6px solid teal;
 }
 
-.auth-form .auth-wrapper h3 {
-  margin: 30px;
-  font-weight: 700;
-}
-
-.auth-form .auth-wrapper h3 span {
-  color: #fac710;
+.auth-form .auth-wrapper img {
+  width: 100px;
 }
 
 .auth-form .auth-wrapper h4 {
-  margin: 30px;
   font-weight: 700;
   color: teal;
   font-size: 1.8em;
 }
 
 .auth-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px 30px;
-}
-
-.auth-form form label {
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 .auth-form form input {
-  height: 50px;
-  border: none;
-  outline: none;
-  padding-left: 15px;
+  border: 1px solid #fac710;
   font-weight: 600;
   border-radius: 5px;
-  border-left: 2px solid teal;
 }
 
 .auth-form form input:focus {
@@ -373,20 +353,29 @@ header .logo-nav .right #sign-up {
 }
 
 .auth-form form button {
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
   border: none;
-  background-color: #fac710;
+  font-size: 1.2em;
   font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-top: 20px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  padding: 12px 30px;
+  border-radius: 10px;
+  background-color: #fac710;
+  color: #6b6b6b;
+  margin-top: 30px;
+  margin-left: 35px;
+  text-align: center;
 }
 
 .auth-form form button:hover {
   background-color: #f8d24a;
+}
+
+.auth-form form select {
+  font-weight: 600;
+  color: #6b6b6b;
+  border-radius: 10px;
+  border: 1px solid #fac710;
 }
 
 .fact {
@@ -610,5 +599,58 @@ footer .copy-right p {
 
 .active {
   bottom: 0;
+}
+
+#modal-center h5 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+
+#modal-center p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.modal-img {
+  width: 400px;
+  margin-left: 10%;
+}
+
+#signup-complete h5 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+
+#signup-complete p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.btn-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-wrapper a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 10px;
+  width: 100vw;
+  background-color: #fac710;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+.btn-wrapper a:hover {
+  background-color: #f8d24a;
 }
 /*# sourceMappingURL=mainstyle.css.map */
