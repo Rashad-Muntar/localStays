@@ -262,7 +262,7 @@ header{
         }
     }
     li{
-        
+
         img{
 
             
@@ -271,6 +271,13 @@ header{
     }
   
 }
+
+.sign-btn-disable{
+    background-color: gray;
+}
+
+
+
 
 //     .head-text-wrap{
 //         width: 65vw;
@@ -370,14 +377,19 @@ header{
 }
 
 .auth-form{
-    
+    .init-pop-up{
+        border-top: 6px solid $primaryColor;
+        border-bottom: 6px solid $primaryColor;
+        border-radius: 15px;  
+    }
     .auth-wrapper{
         background-image: url("/images/signUp.png");
         background-position: center;
         background-size: 500px;
         background-repeat: no-repeat;
         border-radius: 15px;
-        border-top: 6px solid teal;
+        border-top: 6px solid $primaryColor;
+        border-bottom: 6px solid $primaryColor;
  
 
         img{
@@ -413,8 +425,8 @@ header{
             font-weight: 600;
             padding: 12px 30px;
             border-radius: 10px;
-            background-color: $primaryColor;
-            color: $textColor;
+            background-color: black;
+            color: white;
             margin-top: 30px;
             margin-left: 35px;
             text-align: center;
@@ -606,9 +618,17 @@ footer{
     }
 }
 
+
+// jquery classses added on event prompt
 .active{
     bottom: 0;
 }
+
+.noHover{
+    pointer-events: none;
+}
+
+// jquery classses added on event prompt
 
 #modal-center{
     h5{
@@ -645,20 +665,82 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
+}
 
-    a{
-        text-decoration: none;
-        font-size: 1.2em;
-        font-weight: 600;
-        padding: 12px 30px;
-        border-radius: 10px;
-        width: 100vw;
-        background-color: $primaryColor;
-        color: $textColor;
-        text-align: center;
 
-        &:hover{
-            background-color: $hover;
-        }
-    }
+
+$red:#F44336;
+@mixin transition($in) {
+	transition:$in;
+	-webkit-transition:$in;
+	-moz-transition:$in;
+	-o-transition:$in;
+	-ms-transition:$in;
+}
+@mixin transform($in) {
+	transform:$in;
+	-webkit-transform:$in;
+	-moz-transform:$in;
+	-o-transform:$in;
+	-ms-transform:$in;
+}
+@mixin animation($in) {
+	animation:$in;
+	-webkit-animation:$in;
+	-moz-animation:$in;
+	-o-animation:$in;
+	-ms-animation:$in;
+}
+
+
+.myButt {
+	outline:none;
+	border:none;
+	padding:20px;
+	display:block;
+	margin:50px auto;
+	cursor:pointer;
+	font-size:20px;
+    background-color:black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 10px;
+    width: 100%;
+	position:relative;
+
+
+	@include transition(all 0.7s ease);
+}
+
+
+// ################ ONE
+
+.one {
+	border-color:#fff;
+	overflow:hidden;
+	color:#fff;
+
+	.insider {
+		background-color:#fff;
+		width:100%;
+		height:20px;
+		position:absolute;
+		left:-135px;
+
+		@include transform(rotateZ(45deg));
+	}
+
+	&:hover {
+		background-color:$primaryColor;
+		border-color:#fff;
+		color:#fff;
+
+		.insider {
+			@include transition(all 0.3s ease);
+			left:135px;
+		}
+	}
 }

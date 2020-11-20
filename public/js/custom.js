@@ -5,8 +5,14 @@ setTimeout(() => {
 });
 
 $(".signup-btn").click(function(){
-  var modal = UIkit.modal("#signup-complete");
+  $('.signup-btn').attr("disabled", true);
+  $(".signup-btn").addClass("noHover");
+
+  setTimeout(()=>{
+    var modal = UIkit.modal("#signup-complete");
     modal.show();
+  }, 4000)
+
 })
 
 }, 3000)

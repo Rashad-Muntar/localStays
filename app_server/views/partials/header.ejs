@@ -101,16 +101,19 @@
 
 <!-- modal one -->
 <div id="modal-center" class="uk-flex-top auth-form" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical init-pop-up">
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <h5>Don't Know what you are looking for?</h5>
         <img src="/images/modalimg.png" alt="" class="modal-img">
         <p>Join our free no obligation weekly webinars for a friendly  chat to discuss your options.</p>
         <div class="btn-wrapper">
-            <a href="#signup" uk-toggle>Sign Up</a>
-        </div>
-        
+
+                <a href="#signup" class="myButt one" uk-toggle>
+                    <div class='insider'></div>
+                    Sign Up
+                </a>
+        </div> 
     </div>
 </div>        
 
@@ -119,10 +122,9 @@
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical auth-wrapper">
         
                 <button class="uk-modal-close-default" type="button" uk-close></button>
-                <img src="images/logo3.png" alt="">
-                <h4>Hello! <br>Lets get your account set up</h4>
+                <h4>Hello! <br>Register Below</h4>
 
-                <form action=""  uk-grid>
+                <form action="" uk-grid>
                     <div class="uk-width-1-2@s">
                         <input class="uk-input" type="text" name="username" placeholder="Enter First Name">
                     </div>
@@ -138,8 +140,11 @@
                         <input class="uk-input" type="text" placeholder="What's app">
                     </div>
 
+
                     <div class="uk-margin uk-width-1-1">
-                            <select class="uk-input">
+                        <label class="uk-form-label" for="form-stacked-select">Select</label>
+                        <div class="uk-form-controls">
+                            <select class="uk-select" id="form-stacked-select">
                                 <option>I want to</option>
                                 <option>Short Let</option>
                                 <option>Rent</option>
@@ -150,13 +155,13 @@
                                 <option>Let</option>
                                 <option>Invest</option>
                             </select>
+                        </div>
                     </div>
+                    <button class='myButt one signup-btn'>
+                        <div class='insider'></div>
+                        Register Now
+                    </button>
                    
-                    <div class="uk-width-1-1">
-                        <input class="uk-input" type="password" name="password" placeholder="Enter password">
-                    </div>
-
-                    <button class="signup-btn">SIGN UP</button>
                 </form>
         
             </div>
@@ -164,14 +169,20 @@
     
 <!-- modal three     -->
         <div id="signup-complete" class="uk-flex-top auth-form" uk-modal>
-            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical init-pop-up">
 
                 <button class="uk-modal-close-default" type="button" uk-close></button>
                 <h5>Thank You</h5>
                 <img src="/images/congrats.png" alt="" class="modal-img">
                 <p>Email will be send to you within 48 hours with the webinar details.</p>
+                
+
+
                 <div class="btn-wrapper">
-                    <a href="#" class="uk-modal-close" type="button">Close</a>
+                    <a href="#" class="uk-modal-close-default myButt one" type="button">
+                        <div class='insider'></div>
+                        Close
+                    </a>
                 </div>
                 
             </div>

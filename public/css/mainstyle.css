@@ -290,6 +290,10 @@ header .logo-nav .right #sign-up {
   color: #252525;
 }
 
+.sign-btn-disable {
+  background-color: gray;
+}
+
 .partner-wrapper {
   width: 100vw;
   border-bottom: 1px solid #dadada;
@@ -317,13 +321,20 @@ header .logo-nav .right #sign-up {
   width: 500px !important;
 }
 
+.auth-form .init-pop-up {
+  border-top: 6px solid #fac710;
+  border-bottom: 6px solid #fac710;
+  border-radius: 15px;
+}
+
 .auth-form .auth-wrapper {
   background-image: url("/images/signUp.png");
   background-position: center;
   background-size: 500px;
   background-repeat: no-repeat;
   border-radius: 15px;
-  border-top: 6px solid teal;
+  border-top: 6px solid #fac710;
+  border-bottom: 6px solid #fac710;
 }
 
 .auth-form .auth-wrapper img {
@@ -360,8 +371,8 @@ header .logo-nav .right #sign-up {
   font-weight: 600;
   padding: 12px 30px;
   border-radius: 10px;
-  background-color: #fac710;
-  color: #6b6b6b;
+  background-color: black;
+  color: white;
   margin-top: 30px;
   margin-left: 35px;
   text-align: center;
@@ -601,6 +612,10 @@ footer .copy-right p {
   bottom: 0;
 }
 
+.noHover {
+  pointer-events: none;
+}
+
 #modal-center h5 {
   text-align: center;
   font-weight: 700;
@@ -638,19 +653,61 @@ footer .copy-right p {
           justify-content: center;
 }
 
-.btn-wrapper a {
+.myButt {
+  outline: none;
+  border: none;
+  padding: 20px;
+  display: block;
+  margin: 50px auto;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: black;
   text-decoration: none;
+  text-align: center;
   font-size: 1.2em;
   font-weight: 600;
   padding: 12px 30px;
   border-radius: 10px;
-  width: 100vw;
-  background-color: #fac710;
-  color: #6b6b6b;
-  text-align: center;
+  width: 100%;
+  position: relative;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
 }
 
-.btn-wrapper a:hover {
-  background-color: #f8d24a;
+.one {
+  border-color: #fff;
+  overflow: hidden;
+  color: #fff;
+}
+
+.one .insider {
+  background-color: #fff;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: -135px;
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+}
+
+.one:hover {
+  background-color: #fac710;
+  border-color: #fff;
+  color: #fff;
+}
+
+.one:hover .insider {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  left: 135px;
 }
 /*# sourceMappingURL=mainstyle.css.map */
