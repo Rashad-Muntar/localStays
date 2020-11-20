@@ -328,7 +328,6 @@ header .logo-nav .right #sign-up {
 }
 
 .auth-form .auth-wrapper {
-  background-image: url("/images/signUp.png");
   background-position: center;
   background-size: 500px;
   background-repeat: no-repeat;
