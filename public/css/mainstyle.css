@@ -17,14 +17,20 @@ html {
 
 .section-head-text {
   margin: 0 auto;
-  width: 65vw;
+  width: 100vw;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
+  padding-top: 70px;
+  border-top: 1px solid #b4b4b4;
 }
 
 .section-head-text h3 {
   font-size: 2em;
   font-weight: 700;
+}
+
+.section-head-text h3 span {
+  color: #fac710;
 }
 
 header {
@@ -598,29 +604,6 @@ header .logo-nav .right #sign-up {
   background-color: gray;
 }
 
-.partner-wrapper {
-  width: 100vw;
-  border-bottom: 1px solid #dadada;
-}
-
-.partner-wrapper .partners {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 65vw;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.partner-wrapper .partners img {
-  width: 150px;
-  opacity: 0.2;
-  height: 100px;
-}
-
 .uk-margin-auto-vertical {
   width: 500px !important;
 }
@@ -632,6 +615,7 @@ header .logo-nav .right #sign-up {
 }
 
 .auth-form .auth-wrapper {
+  background-image: url("/images/pop-back.png");
   background-position: center;
   background-size: 500px;
   background-repeat: no-repeat;
@@ -690,6 +674,7 @@ header .logo-nav .right #sign-up {
   color: #6b6b6b;
   border-radius: 10px;
   border: 1px solid #fac710;
+  margin-top: 20px;
 }
 
 .fact {
@@ -719,14 +704,9 @@ header .logo-nav .right #sign-up {
   height: 100%;
 }
 
-.fact .uk-slideshow-items > div #rate-circle {
-  background-color: gray;
-}
-
 .fact .uk-slideshow-items > div .circle {
   height: 350px;
   width: 350px;
-  background-color: #dddddd;
   border: 60px solid #fac710;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -756,27 +736,35 @@ header .logo-nav .right #sign-up {
 }
 
 .fact .uk-slideshow-items > div .circle .rate i {
-  color: #fac710;
-  font-size: 0.9em !important;
+  font-size: 1.5em !important;
+}
+
+.fact .uk-slideshow-items > div .circle i {
+  font-size: 4em;
 }
 
 .fact .uk-slideshow-items > div .right-text {
   width: 30%;
   margin-left: 50px;
   margin-right: 20px;
-  font-size: 1.2em;
-  font-weight: 600;
-  color: #6b6b6b;
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  color: black;
 }
 
 .fact .uk-slideshow-items > div .left-text {
   width: 30%;
-  margin-right: 50px;
-  margin-left: 20px;
-  text-align: right;
-  font-size: 1.2em;
-  font-weight: 600;
+  margin-left: 50px;
+  text-align: left;
+  line-height: 30px;
+  font-size: 1.5em;
+  font-weight: 800;
   color: #6b6b6b;
+}
+
+.fact .uk-slideshow-items > div .left-text span {
+  color: #fac710;
 }
 
 .fact .arr {
@@ -921,7 +909,6 @@ footer .copy-right p {
 
 .sidebarActive {
   border-color: #fac710;
-  background-color: #fac710;
 }
 
 .uk-light .uk-dotnav > .uk-active > * {
@@ -1022,5 +1009,78 @@ footer .copy-right p {
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   left: 135px;
+}
+
+#know-header-text {
+  text-align: center;
+}
+
+.know-more {
+  width: 65vw;
+  height: 100vh;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.know-more .know-more-wrapper {
+  height: 100%;
+}
+
+.know-more .know-more-wrapper .second-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+.know-more .know-more-wrapper .second-wrapper > div {
+  width: 70%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+}
+
+.know-more .know-more-wrapper .second-wrapper > div div p {
+  color: #6b6b6b;
+  font-size: 1.1em;
+}
+
+.know-more .know-more-wrapper .second-wrapper > div img {
+  width: 250px;
+  margin-right: 30px;
+}
+
+.know-more .know-more-wrapper .second-wrapper .top {
+  border: 10px solid #fac710;
+  margin-bottom: 100px;
+}
+
+.know-more .know-more-wrapper .second-wrapper .bottom {
+  border: 10px solid #fac710;
+  margin-left: 30%;
+}
+
+.know-more .know-more-wrapper .second-wrapper .bottom img {
+  margin-right: 0;
+}
+
+.know-more .know-more-wrapper .second-wrapper .bottom p {
+  margin-right: 30;
+}
+
+.know-more .know-more-wrapper a i {
+  color: red;
 }
 /*# sourceMappingURL=mainstyle.css.map */

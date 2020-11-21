@@ -1,3 +1,7 @@
+$('.uk-dotnav').parent("a").click(function() {
+  $(this).removeClass('sidebarActive');
+  $(this).addClass('sidebarActive');
+});
 
 setTimeout(() => {
   $(function() {

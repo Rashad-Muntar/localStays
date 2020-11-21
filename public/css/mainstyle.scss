@@ -4,6 +4,7 @@ $hover: #f8d24a;
 $navBackground: rgb(241, 241, 241);
 $signatureColor: #d9c001;
 
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -22,13 +23,19 @@ html {
 
 .section-head-text{
     margin: 0 auto;
-    width: 65vw;
+    width: 100vw;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-top: 70px;
+    border-top: 1px solid rgb(180, 180, 180);
 
     h3{
         font-size: 2em;
         font-weight: 700;
+
+        span{
+            color: $primaryColor;
+        }
     }
 }
 
@@ -181,6 +188,7 @@ header{
 .jumbo{
     width: 100vw;
     margin: 0 auto;
+    
     
 }
 
@@ -604,25 +612,25 @@ header{
 // }
 
 
-.partner-wrapper{
-    width: 100vw;
-    border-bottom: 1px solid rgb(218, 218, 218);
+// .partner-wrapper{
+//     width: 100vw;
+//     border-bottom: 1px solid rgb(218, 218, 218);
     
-    .partners{
-        display: flex;
-        justify-content: space-between;
-        width: 65vw;
-        height: 100px;
-        margin: 0 auto;
+//     .partners{
+//         display: flex;
+//         justify-content: space-between;
+//         width: 65vw;
+//         height: 100px;
+//         margin: 0 auto;
     
-        img{
-           width: 150px;
-           opacity: 0.2;
-           height: 100px; 
-        }
-    }
+//         img{
+//            width: 150px;
+//            opacity: 0.2;
+//            height: 100px; 
+//         }
+//     }
     
-}
+// }
 
 .uk-margin-auto-vertical{
     width: 500px !important;
@@ -630,12 +638,13 @@ header{
 
 .auth-form{
     .init-pop-up{
+        
         border-top: 6px solid $primaryColor;
         border-bottom: 6px solid $primaryColor;
         border-radius: 15px;  
     }
     .auth-wrapper{
-        
+        background-image: url("/images/pop-back.png");
         background-position: center;
         background-size: 500px;
         background-repeat: no-repeat;
@@ -693,6 +702,7 @@ header{
             color: $textColor;
             border-radius: 10px;
             border: 1px solid $primaryColor;
+            margin-top: 20px;
         }
     }
 }
@@ -700,24 +710,28 @@ header{
 .fact{
     width: 65vw;
     margin: 0 auto;
+
     .uk-slideshow-items{
+
         color: black !important;
         & > div{
             z-index: 2;
             color: black !important;
+
     .facts-wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
     }
+
     #rate-circle{
-        background-color: gray;;
+        
     }
+  
             .circle{
                 height: 350px;
                 width: 350px;
-                background-color: rgb(221, 221, 221);
                 border: 60px solid $primaryColor;
                 display: flex;
                 justify-content: center;
@@ -738,28 +752,36 @@ header{
                 }
                 .rate{
                     i{
-                        color: $primaryColor;
-                        font-size: 0.9em !important;
+                        font-size: 1.5em !important;
                     }
+                }
+                i{
+                    font-size: 4em;
+                    
                 }
             }
             .right-text{
                 width: 30%;
                 margin-left: 50px;
                 margin-right: 20px;
-                font-size: 1.2em;
-                font-weight: 600;
-                color: $textColor;
+                font-size: 3em;
+                font-weight: 800;
+                text-align: center;
+                color: black;
             }
 
             .left-text{
                 width: 30%;
-                margin-right: 50px;
-                margin-left: 20px;
-                text-align: right;
-                font-size: 1.2em;
-                font-weight: 600;
+                margin-left: 50px;
+                text-align: left;
+                line-height: 30px;
+                font-size: 1.5em;
+                font-weight: 800;
                 color: $textColor;
+
+                span{
+                    color: $primaryColor;
+                }
             }
         }
     }
@@ -882,7 +904,6 @@ footer{
 
 .sidebarActive{
     border-color: $primaryColor;
-    background-color: $primaryColor;
 }
 
 .uk-light .uk-dotnav>.uk-active>*{
@@ -1004,4 +1025,70 @@ $red:#F44336;
 			left:135px;
 		}
 	}
+}
+
+
+#know-header-text{
+    text-align: center;
+}
+.know-more{
+    width: 65vw;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 70px;
+
+   .know-more-wrapper{
+       height: 100%;
+
+      .second-wrapper{
+           display: flex;
+           flex-direction: column;
+           background-color: white;
+
+           & > div{
+               width: 70%;
+               height: 300px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               padding: 0 50px;
+               
+               div{
+                p{
+                    color: $textColor;
+                    font-size: 1.1em;
+                }
+               }
+               img{
+                   width: 250px;
+                   margin-right: 30px;
+               }
+
+           }
+
+           .top{
+               border: 10px solid $primaryColor;
+               margin-bottom: 100px;
+           }
+           .bottom{
+            border: 10px solid $primaryColor;
+            margin-left: 30%;
+            
+
+            img{
+                margin-right: 0;
+            }
+            p{
+                margin-right: 30;  
+            }
+           }
+       }
+       a{
+ 
+           i{
+               color: red;
+           }
+       }
+   } 
+
 }
