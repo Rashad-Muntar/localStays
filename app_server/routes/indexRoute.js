@@ -56,4 +56,6 @@ router.get("/invest", indexCtrl.invest)
 
 router.get("/let", indexCtrl.lettings)
 
+router.get("/find-out-more", indexCtrl.knowMore)
+
 module.exports = router

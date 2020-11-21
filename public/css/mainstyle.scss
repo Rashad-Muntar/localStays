@@ -215,7 +215,7 @@ header{
                     justify-content: flex-end;
     
                     a{
-                        border-color: $primaryColor !important;
+                        border-color: rgb(24, 24, 24) !important;
                         height: 50px;
                         border-radius: 0;
                         width: 4px; 
@@ -247,7 +247,7 @@ header{
                     color: $primaryColor;
                 };
             }
-            p{
+            a{
                 background-color: $primaryColor;
                 padding: 10px 15px;
                 font-weight: 600;
@@ -257,14 +257,12 @@ header{
                 border-radius: 7px;
                 text-align: center;
                 margin-left: 50%;
+                text-decoration: none;
+                color: rgb(37, 37, 37);
+                cursor: pointer;
 
                 &:hover{
                     background-color: $hover;
-                }
-                
-                a{
-                    text-decoration: none;
-                    color: rgb(37, 37, 37);
                 }
             }
         }
@@ -300,7 +298,7 @@ header{
                     justify-content: flex-end;
     
                     a{
-                        border-color: $primaryColor !important;
+                        border-color: rgb(24, 24, 24) !important;
                         height: 50px;
                         border-radius: 0;
                         width: 4px; 
@@ -332,7 +330,7 @@ header{
                     color: $primaryColor;
                 };
             }
-            p{
+            a{
                 background-color: $primaryColor;
                 padding: 10px 15px;
                 font-weight: 600;
@@ -341,16 +339,14 @@ header{
                 width: 160px;
                 border-radius: 7px;
                 text-align: center;
+                text-decoration: none;
+                    color: rgb(37, 37, 37);
                 
 
                 &:hover{
                     background-color: $hover;
                 }
                 
-                a{
-                    text-decoration: none;
-                    color: rgb(37, 37, 37);
-                }
             }
         }
     }
@@ -384,7 +380,7 @@ header{
                     justify-content: flex-end;
     
                     a{
-                        border-color: $primaryColor !important;
+                        border-color: rgb(24, 24, 24) !important;
                         height: 50px;
                         border-radius: 0;
                         width: 4px; 
@@ -416,7 +412,7 @@ header{
                     color: $primaryColor;
                 };
             }
-            p{
+            a{
                 background-color: $primaryColor;
                 padding: 10px 15px;
                 font-weight: 600;
@@ -425,15 +421,12 @@ header{
                 width: 160px;
                 border-radius: 7px;
                 text-align: center;
+                text-decoration: none;
+                    color: rgb(37, 37, 37);
                 
 
                 &:hover{
                     background-color: $hover;
-                }
-                
-                a{
-                    text-decoration: none;
-                    color: rgb(37, 37, 37);
                 }
             }
         }
@@ -468,7 +461,7 @@ header{
                     justify-content: flex-end;
     
                     a{
-                        border-color: $primaryColor !important;
+                        border-color: rgb(24, 24, 24) !important;
                         height: 50px;
                         border-radius: 0;
                         width: 4px; 
@@ -483,7 +476,7 @@ header{
             display: flex;
        
             flex-direction: column;
-            top: 10%;
+            top: 5%;
 
             .head-text-4{
                 color: rgb(36, 36, 36);
@@ -492,7 +485,7 @@ header{
                 font-size: 3em !important;
                 line-height: 60px;
                 letter-spacing: 2px !important;
-                width: 60%;
+                width: 70%;
                 margin-left: 35%;
                 
                 
@@ -500,7 +493,7 @@ header{
                     color: $primaryColor;
                 };
             }
-            p{
+            a{
                 background-color: $primaryColor;
                 padding: 10px 15px;
                 font-weight: 600;
@@ -510,14 +503,11 @@ header{
                 border-radius: 7px;
                 text-align: center;
                 margin-left: 35%;
+                text-decoration: none;
+                color: rgb(37, 37, 37);
 
                 &:hover{
                     background-color: $hover;
-                }
-                
-                a{
-                    text-decoration: none;
-                    color: rgb(37, 37, 37);
                 }
             }
         }
@@ -890,6 +880,15 @@ footer{
     pointer-events: none;
 }
 
+.sidebarActive{
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+}
+
+.uk-light .uk-dotnav>.uk-active>*{
+background-color: $primaryColor !important;
+border-color: $primaryColor !important;
+}
 // jquery classses added on event prompt
 
 #modal-center{

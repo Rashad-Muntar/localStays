@@ -246,7 +246,7 @@ header .logo-nav .right #sign-up {
 }
 
 .uk-slideshow-items .head-text-wrap-1 .dot .uk-dotnav li a {
-  border-color: #fac710 !important;
+  border-color: #181818 !important;
   height: 50px;
   border-radius: 0;
   width: 4px;
@@ -279,7 +279,7 @@ header .logo-nav .right #sign-up {
   color: #fac710;
 }
 
-.uk-slideshow-items .head-text-wrap-1 .text-1 p {
+.uk-slideshow-items .head-text-wrap-1 .text-1 a {
   background-color: #fac710;
   padding: 10px 15px;
   font-weight: 600;
@@ -289,15 +289,13 @@ header .logo-nav .right #sign-up {
   border-radius: 7px;
   text-align: center;
   margin-left: 50%;
-}
-
-.uk-slideshow-items .head-text-wrap-1 .text-1 p:hover {
-  background-color: #f8d24a;
-}
-
-.uk-slideshow-items .head-text-wrap-1 .text-1 p a {
   text-decoration: none;
   color: #252525;
+  cursor: pointer;
+}
+
+.uk-slideshow-items .head-text-wrap-1 .text-1 a:hover {
+  background-color: #f8d24a;
 }
 
 .uk-slideshow-items .head-text-wrap-2 {
@@ -349,7 +347,7 @@ header .logo-nav .right #sign-up {
 }
 
 .uk-slideshow-items .head-text-wrap-2 .dot .uk-dotnav li a {
-  border-color: #fac710 !important;
+  border-color: #181818 !important;
   height: 50px;
   border-radius: 0;
   width: 4px;
@@ -381,7 +379,7 @@ header .logo-nav .right #sign-up {
   color: #fac710;
 }
 
-.uk-slideshow-items .head-text-wrap-2 .text-2 p {
+.uk-slideshow-items .head-text-wrap-2 .text-2 a {
   background-color: #fac710;
   padding: 10px 15px;
   font-weight: 600;
@@ -390,15 +388,12 @@ header .logo-nav .right #sign-up {
   width: 160px;
   border-radius: 7px;
   text-align: center;
-}
-
-.uk-slideshow-items .head-text-wrap-2 .text-2 p:hover {
-  background-color: #f8d24a;
-}
-
-.uk-slideshow-items .head-text-wrap-2 .text-2 p a {
   text-decoration: none;
   color: #252525;
+}
+
+.uk-slideshow-items .head-text-wrap-2 .text-2 a:hover {
+  background-color: #f8d24a;
 }
 
 .uk-slideshow-items .head-text-wrap-3 {
@@ -450,7 +445,7 @@ header .logo-nav .right #sign-up {
 }
 
 .uk-slideshow-items .head-text-wrap-3 .dot .uk-dotnav li a {
-  border-color: #fac710 !important;
+  border-color: #181818 !important;
   height: 50px;
   border-radius: 0;
   width: 4px;
@@ -482,7 +477,7 @@ header .logo-nav .right #sign-up {
   color: #fac710;
 }
 
-.uk-slideshow-items .head-text-wrap-3 .text-3 p {
+.uk-slideshow-items .head-text-wrap-3 .text-3 a {
   background-color: #fac710;
   padding: 10px 15px;
   font-weight: 600;
@@ -491,15 +486,12 @@ header .logo-nav .right #sign-up {
   width: 160px;
   border-radius: 7px;
   text-align: center;
-}
-
-.uk-slideshow-items .head-text-wrap-3 .text-3 p:hover {
-  background-color: #f8d24a;
-}
-
-.uk-slideshow-items .head-text-wrap-3 .text-3 p a {
   text-decoration: none;
   color: #252525;
+}
+
+.uk-slideshow-items .head-text-wrap-3 .text-3 a:hover {
+  background-color: #f8d24a;
 }
 
 .uk-slideshow-items .head-text-wrap-4 {
@@ -551,7 +543,7 @@ header .logo-nav .right #sign-up {
 }
 
 .uk-slideshow-items .head-text-wrap-4 .dot .uk-dotnav li a {
-  border-color: #fac710 !important;
+  border-color: #181818 !important;
   height: 50px;
   border-radius: 0;
   width: 4px;
@@ -566,7 +558,7 @@ header .logo-nav .right #sign-up {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 10%;
+  top: 5%;
 }
 
 .uk-slideshow-items .head-text-wrap-4 .text-4 .head-text-4 {
@@ -576,7 +568,7 @@ header .logo-nav .right #sign-up {
   font-size: 3em !important;
   line-height: 60px;
   letter-spacing: 2px !important;
-  width: 60%;
+  width: 70%;
   margin-left: 35%;
 }
 
@@ -584,7 +576,7 @@ header .logo-nav .right #sign-up {
   color: #fac710;
 }
 
-.uk-slideshow-items .head-text-wrap-4 .text-4 p {
+.uk-slideshow-items .head-text-wrap-4 .text-4 a {
   background-color: #fac710;
   padding: 10px 15px;
   font-weight: 600;
@@ -594,15 +586,12 @@ header .logo-nav .right #sign-up {
   border-radius: 7px;
   text-align: center;
   margin-left: 35%;
-}
-
-.uk-slideshow-items .head-text-wrap-4 .text-4 p:hover {
-  background-color: #f8d24a;
-}
-
-.uk-slideshow-items .head-text-wrap-4 .text-4 p a {
   text-decoration: none;
   color: #252525;
+}
+
+.uk-slideshow-items .head-text-wrap-4 .text-4 a:hover {
+  background-color: #f8d24a;
 }
 
 .sign-btn-disable {
@@ -928,6 +917,16 @@ footer .copy-right p {
 
 .noHover {
   pointer-events: none;
+}
+
+.sidebarActive {
+  border-color: #fac710;
+  background-color: #fac710;
+}
+
+.uk-light .uk-dotnav > .uk-active > * {
+  background-color: #fac710 !important;
+  border-color: #fac710 !important;
 }
 
 #modal-center h5 {

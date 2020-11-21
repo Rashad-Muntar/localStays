@@ -94,6 +94,10 @@ const invest = (req, res) => {
 const lettings = (req, res) => {
     res.render("products/let")
 }
+
+const knowMore = (req, res) => {
+    res.render("products/knowMore")
+}
 module.exports = {
     home,
     aboutUs,
@@ -119,5 +123,6 @@ module.exports = {
     hfs,
     sell,
     invest,
-    lettings
+    lettings,
+    knowMore
 }
