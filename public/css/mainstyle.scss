@@ -3,6 +3,7 @@ $textColor: rgb(107, 107, 107);
 $hover: #f8d24a;
 $navBackground: rgb(241, 241, 241);
 $signatureColor: #d9c001;
+$pageWidth: 85vw;
 
 
 body{
@@ -55,7 +56,7 @@ header{
 
         .social-icons{
             display: flex;
-            width: 65vw;
+            width: $pageWidth;
             height: 100%;
             justify-content: space-between;
             align-items: center;
@@ -83,7 +84,7 @@ header{
         }
     }
     .logo-nav{
-        width: 65vw;
+        width: $pageWidth;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -196,7 +197,7 @@ header{
 
     .head-text-wrap-1{
         height: 100%;
-        width: 65vw;
+        width: $pageWidth;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -208,7 +209,7 @@ header{
             justify-content: center;
             align-items: center;
             height: 100%;
-            left: 68% !important;
+            left: 76% !important;
             top: 15% !important;
 
             .uk-dotnav{
@@ -247,7 +248,7 @@ header{
                 font-size: 3em !important;
                 line-height: 60px;
                 letter-spacing: 2px !important;
-                width: 50%;
+                width: 45%;
                 margin-left: 50%;
                 
                 
@@ -279,7 +280,7 @@ header{
 
     .head-text-wrap-2{
         height: 100%;
-        width: 65vw;
+        width: $pageWidth;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -291,7 +292,7 @@ header{
             justify-content: center;
             align-items: center;
             height: 100%;
-            left: 68% !important;
+            left: 76% !important;
             top: 15% !important;
 
             .uk-dotnav{
@@ -361,7 +362,7 @@ header{
 
     .head-text-wrap-3{
         height: 100%;
-        width: 65vw;
+        width: $pageWidth;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -373,7 +374,7 @@ header{
             justify-content: center;
             align-items: center;
             height: 100%;
-            left: 68% !important;
+            left: 76% !important;
             top: 15% !important;
 
             .uk-dotnav{
@@ -442,7 +443,7 @@ header{
 
     .head-text-wrap-4{
         height: 100%;
-        width: 65vw;
+        width: $pageWidth;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -454,7 +455,7 @@ header{
             justify-content: center;
             align-items: center;
             height: 100%;
-            left: 68% !important;
+            left: 76% !important;
             top: 15% !important;
 
             .uk-dotnav{
@@ -493,8 +494,8 @@ header{
                 font-size: 3em !important;
                 line-height: 60px;
                 letter-spacing: 2px !important;
-                width: 70%;
-                margin-left: 35%;
+                width: 60%;
+                margin-left: 43%;
                 
                 
                 span{
@@ -510,7 +511,7 @@ header{
                 width: 160px;
                 border-radius: 7px;
                 text-align: center;
-                margin-left: 35%;
+                margin-left: 43%;
                 text-decoration: none;
                 color: rgb(37, 37, 37);
 
@@ -708,7 +709,7 @@ header{
 }
 
 .fact{
-    width: 65vw;
+    width: $pageWidth;
     margin: 0 auto;
 
     .uk-slideshow-items{
@@ -763,7 +764,7 @@ header{
             .right-text{
                 width: 30%;
                 margin-left: 50px;
-                margin-right: 20px;
+                margin-right: 50px;
                 font-size: 3em;
                 font-weight: 800;
                 text-align: center;
@@ -796,7 +797,7 @@ footer{
     background-color: rgb(231, 231, 231);
 
     .footer-wrapper{
-        width: 65vw;
+        width: $pageWidth;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -835,7 +836,7 @@ footer{
         background-color: rgb(185, 185, 185);
 
         p{
-            width: 65vw;
+            width: $pageWidth;
             margin: 0 auto;
             display: flex;
             justify-content: center;
@@ -1032,7 +1033,7 @@ $red:#F44336;
     text-align: center;
 }
 .know-more{
-    width: 65vw;
+    width: $pageWidth;
     height: 100vh;
     margin: 0 auto;
     margin-top: 70px;

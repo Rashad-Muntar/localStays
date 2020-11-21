@@ -1,4 +1,4 @@
-$('.uk-dotnav').parent("a").click(function() {
+$('.uk-dotnav li').parent("a").click(function() {
   $(this).removeClass('sidebarActive');
   $(this).addClass('sidebarActive');
 });
