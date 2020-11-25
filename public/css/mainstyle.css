@@ -160,6 +160,10 @@ header .logo-nav .center li ul li:hover {
   background-color: #e6e6e6;
 }
 
+header .logo-nav .center .insight-drps {
+  width: 200px;
+}
+
 header .logo-nav .center .hwiks:hover .hwiks-drps {
   display: block;
 }
@@ -252,7 +256,7 @@ header .logo-nav .right #sign-up {
 }
 
 .uk-slideshow-items .head-text-wrap-1 .dot .uk-dotnav li a {
-  border-color: #181818 !important;
+  border-color: #fac710 !important;
   height: 50px;
   border-radius: 0;
   width: 4px;
@@ -353,7 +357,7 @@ header .logo-nav .right #sign-up {
 }
 
 .uk-slideshow-items .head-text-wrap-2 .dot .uk-dotnav li a {
-  border-color: #181818 !important;
+  border-color: #fac710 !important;
   height: 50px;
   border-radius: 0;
   width: 4px;
@@ -451,7 +455,7 @@ header .logo-nav .right #sign-up {
 }
 
 .uk-slideshow-items .head-text-wrap-3 .dot .uk-dotnav li a {
-  border-color: #181818 !important;
+  border-color: #fac710 !important;
   height: 50px;
   border-radius: 0;
   width: 4px;
@@ -549,7 +553,7 @@ header .logo-nav .right #sign-up {
 }
 
 .uk-slideshow-items .head-text-wrap-4 .dot .uk-dotnav li a {
-  border-color: #181818 !important;
+  border-color: #fac710 !important;
   height: 50px;
   border-radius: 0;
   width: 4px;
@@ -746,7 +750,7 @@ header .logo-nav .right #sign-up {
 .fact .uk-slideshow-items > div .right-text {
   width: 30%;
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 0;
   font-size: 3em;
   font-weight: 800;
   text-align: center;
@@ -770,6 +774,22 @@ header .logo-nav .right #sign-up {
 .fact .arr {
   color: goldenrod;
   font-weight: 600;
+}
+
+.fact ul li {
+  color: #fac710;
+}
+
+.fact ul li a {
+  border-color: #fac710 !important;
+  width: 20px !important;
+  height: 20px;
+  border: 2px solid #fac710 !important;
+}
+
+.fact ul li .uk-active {
+  border-color: #fac710 !important;
+  background-color: #fac710 !important;
 }
 
 footer {
@@ -810,8 +830,11 @@ footer .footer-wrapper > div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 30px;
+  width: 20%;
   padding-bottom: 30px;
 }
 
@@ -833,6 +856,14 @@ footer .footer-wrapper > div a {
 footer .footer-wrapper > div a:hover {
   color: #312b06;
   font-weight: 500;
+}
+
+footer .footer-wrapper .other-service {
+  padding-left: 150px;
+}
+
+footer .footer-wrapper .terms {
+  padding-left: 70px;
 }
 
 footer .copy-right {
@@ -918,11 +949,7 @@ footer .copy-right p {
   pointer-events: none;
 }
 
-.sidebarActive {
-  border-color: #fac710;
-}
-
-.uk-light .uk-dotnav > .uk-active > * {
+.uk-dotnav > .uk-active > * {
   background-color: #fac710 !important;
   border-color: #fac710 !important;
 }
@@ -1024,20 +1051,26 @@ footer .copy-right p {
 
 #know-header-text {
   text-align: center;
+  font-weight: 600;
+  margin-bottom: 70px;
 }
 
-.know-more {
+#know-header-text span {
+  color: #fac710;
+}
+
+.knowMore {
   width: 85vw;
-  height: 100vh;
   margin: 0 auto;
-  margin-top: 70px;
+  height: 100vh;
 }
 
-.know-more .know-more-wrapper {
+.knowMore ul {
   height: 100%;
 }
 
-.know-more .know-more-wrapper .second-wrapper {
+.knowMore ul li .tabs-wrapper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1045,12 +1078,13 @@ footer .copy-right p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
+  height: 100%;
 }
 
-.know-more .know-more-wrapper .second-wrapper > div {
-  width: 70%;
+.knowMore ul li .tabs-wrapper > div {
+  border: 5px solid #fac710;
   height: 300px;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1060,38 +1094,86 @@ footer .copy-right p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 50px;
+  padding: 20px 40px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 1px 37px -30px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 37px -30px rgba(0, 0, 0, 0.75);
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
-.know-more .know-more-wrapper .second-wrapper > div div p {
+.knowMore ul li .tabs-wrapper > div:hover {
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  -webkit-box-shadow: 0px 1px 37px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 37px -20px rgba(0, 0, 0, 0.75);
+}
+
+.knowMore ul li .tabs-wrapper > div img {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.knowMore ul li .tabs-wrapper > div > div {
+  margin: 0;
+  padding: 0;
+}
+
+.knowMore ul li .tabs-wrapper > div > div p {
   color: #6b6b6b;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
-.know-more .know-more-wrapper .second-wrapper > div img {
-  width: 250px;
-  margin-right: 30px;
+.knowMore ul li .tabs-wrapper > div > div h5 {
+  color: #252525;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: 1px;
 }
 
-.know-more .know-more-wrapper .second-wrapper .top {
-  border: 10px solid #fac710;
+.knowMore ul li .tabs-wrapper > div > div h5 span {
+  color: #fac710;
+}
+
+.knowMore ul li .tabs-wrapper .top {
   margin-bottom: 100px;
 }
 
-.know-more .know-more-wrapper .second-wrapper .bottom {
-  border: 10px solid #fac710;
-  margin-left: 30%;
+.knowMore ul li .tabs-wrapper .bottom {
+  margin-left: 20%;
 }
 
-.know-more .know-more-wrapper .second-wrapper .bottom img {
+.knowMore ul li .tabs-wrapper .bottom img {
   margin-right: 0;
 }
 
-.know-more .know-more-wrapper .second-wrapper .bottom p {
-  margin-right: 30;
+.knowMore ul li .head-text-wrap-1 .dot {
+  left: 85% !important;
 }
 
-.know-more .know-more-wrapper a i {
-  color: red;
+.knowMore ul li .head-text-wrap-1 .dot .uk-dotnav li a {
+  height: 25px;
+  width: 25px;
+  border: 3px solid #fac710;
+  border-radius: 100%;
+}
+
+.knowMore .next {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #fac710;
+}
+
+.uk-light .uk-slidenav {
+  color: #2d2d5e !important;
+  border: 3px solid #2d2d5e;
+  border-radius: 100%;
+  margin-left: 90px;
+}
+
+.uk-light .uk-slidenav svg {
+  width: 25px !important;
+  height: 32px;
 }
 /*# sourceMappingURL=mainstyle.css.map */

@@ -1,3 +1,4 @@
+//  css variables
 $primaryColor: #fac710;
 $textColor: rgb(107, 107, 107);
 $hover: #f8d24a;
@@ -40,7 +41,7 @@ html {
     }
 }
 
-
+// header navigation style
 header{
     width: 100vw;
     border-bottom: 1px solid rgb(197, 197, 197);
@@ -144,6 +145,10 @@ header{
             }
         }
     }
+
+    .insight-drps{
+        width: 200px;
+    }
     .hwiks:hover .hwiks-drps{
         display: block;
     }
@@ -186,6 +191,8 @@ header{
 }
 
 
+
+// header images and sliders styles
 .jumbo{
     width: 100vw;
     margin: 0 auto;
@@ -224,7 +231,7 @@ header{
                     justify-content: flex-end;
     
                     a{
-                        border-color: rgb(24, 24, 24) !important;
+                        border-color: $primaryColor !important;
                         height: 50px;
                         border-radius: 0;
                         width: 4px; 
@@ -307,7 +314,7 @@ header{
                     justify-content: flex-end;
     
                     a{
-                        border-color: rgb(24, 24, 24) !important;
+                        border-color: $primaryColor !important;
                         height: 50px;
                         border-radius: 0;
                         width: 4px; 
@@ -389,7 +396,7 @@ header{
                     justify-content: flex-end;
     
                     a{
-                        border-color: rgb(24, 24, 24) !important;
+                        border-color: $primaryColor !important;
                         height: 50px;
                         border-radius: 0;
                         width: 4px; 
@@ -470,7 +477,7 @@ header{
                     justify-content: flex-end;
     
                     a{
-                        border-color: rgb(24, 24, 24) !important;
+                        border-color: $primaryColor !important;
                         height: 50px;
                         border-radius: 0;
                         width: 4px; 
@@ -519,15 +526,6 @@ header{
                     background-color: $hover;
                 }
             }
-        }
-    }
-
-    li{
-
-        img{
-
-            
-
         }
     }
   
@@ -637,6 +635,8 @@ header{
     width: 500px !important;
 }
 
+
+// webna subscription pop up opt-in styles
 .auth-form{
     .init-pop-up{
         
@@ -725,10 +725,6 @@ header{
         align-items: center;
         height: 100%;
     }
-
-    #rate-circle{
-        
-    }
   
             .circle{
                 height: 350px;
@@ -764,7 +760,7 @@ header{
             .right-text{
                 width: 30%;
                 margin-left: 50px;
-                margin-right: 50px;
+                margin-right: 0;
                 font-size: 3em;
                 font-weight: 800;
                 text-align: center;
@@ -790,8 +786,25 @@ header{
         color: goldenrod;
         font-weight: 600;;
     }
+    ul{
+        li{
+            color: $primaryColor;
+            a{
+                border-color: $primaryColor !important;
+                width: 20px !important;
+                height: 20px;
+                border: 2px solid $primaryColor !important;
+            }
+            .uk-active{
+                border-color: $primaryColor !important;
+                background-color: $primaryColor !important;
+            }
+        }
+    }
 }
 
+
+// footer styles
 footer{
     width: 100vw;
     background-color: rgb(231, 231, 231);
@@ -816,8 +829,9 @@ footer{
         & > div{
             display: flex;
             flex-direction: column;
-            width: 30%;
+            justify-content: center;
             margin-right: 30px;
+            width: 20%;
             padding-bottom: 30px;
 
             h5{
@@ -838,6 +852,13 @@ footer{
                 }
             }
         }
+        .other-service{
+            padding-left: 150px;
+            
+        }
+        .terms{
+            padding-left: 70px;
+        }
     }
 
     .copy-right{
@@ -857,6 +878,8 @@ footer{
     }
 }
 
+
+// .cookies styles
 .cookies{
     position: fixed;
     bottom: -100%;
@@ -913,14 +936,13 @@ footer{
     pointer-events: none;
 }
 
-.sidebarActive{
-    border-color: $primaryColor;
+.uk-dotnav > .uk-active > * {
+    background-color: $primaryColor !important;
+    border-color: $primaryColor !important;
 }
 
-.uk-light .uk-dotnav>.uk-active>*{
-background-color: $primaryColor !important;
-border-color: $primaryColor !important;
-}
+
+
 // jquery classses added on event prompt
 
 #modal-center{
@@ -962,7 +984,7 @@ border-color: $primaryColor !important;
 
 
 
-$red:#F44336;
+// CTA hover effect style
 @mixin transition($in) {
 	transition:$in;
 	-webkit-transition:$in;
@@ -1038,68 +1060,122 @@ $red:#F44336;
 	}
 }
 
+// know more page styles
 
 #know-header-text{
     text-align: center;
+    font-weight: 600;
+    margin-bottom: 70px;
+    span{
+        color: $primaryColor;
+    }
 }
-.know-more{
+
+.knowMore{
     width: $pageWidth;
-    height: 100vh;
     margin: 0 auto;
-    margin-top: 70px;
+    height: 100vh;
+    ul{
+        height: 100%;
+        li{
+            .tabs-wrapper{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
 
-   .know-more-wrapper{
-       height: 100%;
+                & > div{
+                    border: 5px solid $primaryColor;
+                    height: 300px;
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 40px;
+                    border-radius: 6px;
+                    -webkit-box-shadow: 0px 1px 37px -30px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 1px 37px -30px rgba(0,0,0,0.75);
+                    box-shadow: 0px 1px 37px -30px rgba(0,0,0,0.75);
+                    transition: 500ms;
 
-      .second-wrapper{
-           display: flex;
-           flex-direction: column;
-           background-color: white;
+                    &:hover{
+                        transform: translate(3px, 3px);
+                        -webkit-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                        box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                    }
 
-           & > div{
-               width: 70%;
-               height: 300px;
-               display: flex;
-               justify-content: space-between;
-               align-items: center;
-               padding: 0 50px;
-               
-               div{
-                p{
-                    color: $textColor;
-                    font-size: 1.1em;
+                    img{
+                        width: 300px;
+                        margin-right: 50px;
+                    }
+
+                    & > div{
+                        margin: 0;
+                        padding: 0;
+                        p{
+                            color: $textColor;
+                            font-size: 1.2em;
+                        }
+                        h5{
+                            color: rgb(37, 37, 37);
+                            font-weight: 700;
+                            text-align: center;
+                            font-size: 1.5em;
+                            letter-spacing: 1px;
+
+                            span{
+                                color: $primaryColor;
+                            }
+                        }
+                    }
                 }
-               }
-               img{
-                   width: 250px;
-                   margin-right: 30px;
-               }
+                .top{
+                    margin-bottom: 100px;
+                }
+                .bottom{
+                    margin-left: 20%;
 
-           }
-
-           .top{
-               border: 10px solid $primaryColor;
-               margin-bottom: 100px;
-           }
-           .bottom{
-            border: 10px solid $primaryColor;
-            margin-left: 30%;
-            
-
-            img{
-                margin-right: 0;
+                    img{
+                        margin-right: 0;
+                    }
+                }
             }
-            p{
-                margin-right: 30;  
-            }
-           }
-       }
-       a{
- 
-           i{
-               color: red;
-           }
-       }
-   } 
+            .head-text-wrap-1{
+                .dot{
+                    left: 85% !important;
+                    
+                    .uk-dotnav{
+                        li{
+                            a{
+                                height: 25px;
+                                width: 25px;
+                                border: 3px solid $primaryColor;
+                                border-radius: 100%;
+                                  
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+.next{
+    font-size: 1.8em;
+    font-weight: 700;
+    color: $primaryColor;
+}
+}
 
+.uk-light .uk-slidenav{
+    color: rgb(45, 45, 94) !important;
+    border: 3px solid rgb(45, 45, 94);
+    border-radius: 100%;
+    margin-left: 90px;
+
+    svg{
+        width: 25px !important;
+        height: 32px;
+    }
+    
 }
