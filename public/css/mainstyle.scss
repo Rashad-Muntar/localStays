@@ -1074,7 +1074,8 @@ footer{
 .knowMore{
     width: $pageWidth;
     margin: 0 auto;
-    height: 100vh;
+    height: 800px;
+    margin-bottom: 100px;
     ul{
         height: 100%;
         li{
@@ -1160,18 +1161,12 @@ footer{
             } 
         }
     }
-.next{
-    font-size: 1.8em;
-    font-weight: 700;
-    color: $primaryColor;
-}
 }
 
 .uk-light .uk-slidenav{
     color: rgb(45, 45, 94) !important;
     border: 3px solid rgb(45, 45, 94);
     border-radius: 100%;
-    margin-left: 90px;
 
     svg{
         width: 25px !important;

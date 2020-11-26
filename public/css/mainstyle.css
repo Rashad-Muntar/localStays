@@ -1062,7 +1062,8 @@ footer .copy-right p {
 .knowMore {
   width: 85vw;
   margin: 0 auto;
-  height: 100vh;
+  height: 800px;
+  margin-bottom: 100px;
 }
 
 .knowMore ul {
@@ -1159,17 +1160,10 @@ footer .copy-right p {
   border-radius: 100%;
 }
 
-.knowMore .next {
-  font-size: 1.8em;
-  font-weight: 700;
-  color: #fac710;
-}
-
 .uk-light .uk-slidenav {
   color: #2d2d5e !important;
   border: 3px solid #2d2d5e;
   border-radius: 100%;
-  margin-left: 90px;
 }
 
 .uk-light .uk-slidenav svg {
