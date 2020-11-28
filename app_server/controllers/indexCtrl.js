@@ -11,7 +11,7 @@ const insight = (req, res) =>{
 }
 
 const hiwks = (req, res)=>{
-    res.render("products/hiwks")
+    res.render("products/aboutService")
 }
 
 const FP = (req, res) =>{

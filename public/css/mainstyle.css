@@ -991,68 +991,15 @@ footer .copy-right p {
           justify-content: center;
 }
 
-.myButt {
-  outline: none;
-  border: none;
-  padding: 20px;
-  display: block;
-  margin: 50px auto;
-  cursor: pointer;
-  font-size: 20px;
-  background-color: black;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: 600;
-  padding: 12px 30px;
-  border-radius: 10px;
-  width: 100%;
-  position: relative;
-  transition: all 0.7s ease;
-  -webkit-transition: all 0.7s ease;
-  -moz-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
-  -ms-transition: all 0.7s ease;
-}
-
-.one {
-  border-color: #fff;
-  overflow: hidden;
-  color: #fff;
-}
-
-.one .insider {
-  background-color: #fff;
-  width: 100%;
-  height: 20px;
-  position: absolute;
-  left: -135px;
-  transform: rotateZ(45deg);
-  -webkit-transform: rotateZ(45deg);
-  -moz-transform: rotateZ(45deg);
-  -o-transform: rotateZ(45deg);
-  -ms-transform: rotateZ(45deg);
-}
-
-.one:hover {
-  background-color: #fac710;
-  border-color: #fff;
-  color: #fff;
-}
-
-.one:hover .insider {
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  left: 135px;
+.know-container {
+  background: #FCFBE9;
+  height: 100vh;
 }
 
 #know-header-text {
   text-align: center;
   font-weight: 600;
-  margin-bottom: 70px;
+  padding: 40px;
 }
 
 #know-header-text span {
@@ -1062,8 +1009,7 @@ footer .copy-right p {
 .knowMore {
   width: 85vw;
   margin: 0 auto;
-  height: 800px;
-  margin-bottom: 100px;
+  height: 680px;
 }
 
 .knowMore ul {
@@ -1084,7 +1030,7 @@ footer .copy-right p {
 
 .knowMore ul li .tabs-wrapper > div {
   border: 5px solid #fac710;
-  height: 300px;
+  height: 270px;
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1111,8 +1057,9 @@ footer .copy-right p {
 }
 
 .knowMore ul li .tabs-wrapper > div img {
-  width: 300px;
+  width: 240px;
   margin-right: 50px;
+  background-color: #FCFBE9;
 }
 
 .knowMore ul li .tabs-wrapper > div > div {
@@ -1160,14 +1107,297 @@ footer .copy-right p {
   border-radius: 100%;
 }
 
-.uk-light .uk-slidenav {
-  color: #2d2d5e !important;
-  border: 3px solid #2d2d5e;
-  border-radius: 100%;
+.knowMore a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.uk-light .uk-slidenav svg {
-  width: 25px !important;
-  height: 32px;
+.knowMore a i {
+  text-align: center;
+  color: #2d2d5e;
+}
+
+.knowMore a span {
+  font-weight: 700;
+  font-size: 2em;
+  color: #fac710;
+  margin-right: 30px;
+}
+
+.fees-container {
+  background-color: #FCFBE9;
+  padding-bottom: 70px;
+}
+
+.fees-container .fee-header {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 70px;
+}
+
+.fees-container .fee-header #fee-header-text {
+  margin: 0;
+  padding: 0;
+}
+
+.fees-container .fee-header p {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.fees-container .fees-wrapper {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.fees-container .fees-wrapper .know-tabs-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fees-container .fees-wrapper .know-tabs-wrapper > div {
+  border: 5px solid #fac710;
+  width: 40%;
+  padding: 50px 80px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.fees-container .fees-wrapper .know-tabs-wrapper > div:hover {
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  -webkit-box-shadow: 0px 1px 37px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 37px -20px rgba(0, 0, 0, 0.75);
+}
+
+.fees-container .fees-wrapper .know-tabs-wrapper > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fees-container .fees-wrapper .know-tabs-wrapper > div > div img {
+  width: 120px;
+}
+
+.fees-container .fees-wrapper .know-tabs-wrapper > div > div .text h5 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.fees-container .fees-wrapper .know-tabs-wrapper > div > div .text p {
+  font-size: 1.2em;
+}
+
+.fees-container .fees-wrapper .know-tabs-wrapper > div h5 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.7em;
+}
+
+.fees-container .fees-wrapper .know-tabs-wrapper > div .top {
+  margin-bottom: 50px;
+}
+
+.fees-container .next-arrow {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.fees-container .next-arrow a {
+  text-decoration: none;
+  color: #22224e;
+}
+
+.fees-container .next-arrow a span {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #fac710;
+}
+
+.service-container {
+  background-color: #FCFBE9;
+  padding-top: 70px;
+}
+
+.service-container .fee-header {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.service-container .fee-header h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.service-container .fee-header p {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 1.2em;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+.service-container .btn-tabs {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.service-container .btn-tabs .uk-subnav li {
+  border-radius: 10px;
+}
+
+.service-container .btn-tabs .uk-subnav li a {
+  border-radius: 10px;
+  -webkit-transition: 500ms !important;
+  transition: 500ms !important;
+}
+
+.service-container .btn-tabs .uk-subnav li a:hover {
+  background-color: #fac710;
+}
+
+.service-container .fees-tab-wrapper {
+  width: 85vw;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.service-container .fees-tab-wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service-container .fees-tab-wrapper > div > div {
+  height: 450px;
+  width: 450px;
+  border: 5px solid #fac710;
+}
+
+.service-container .fees-tab-wrapper .middle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service-container a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-container a i {
+  text-align: center;
+  color: #2d2d5e;
+}
+
+.service-container a span {
+  font-weight: 700;
+  font-size: 2em;
+  color: #fac710;
+  margin-right: 30px;
+}
+
+.uk-subnav-pill > .uk-active > a {
+  background-color: #fac710;
+  color: #272727;
+}
+
+.uk-subnav-pill > * {
+  background: #272727;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.uk-light .uk-slidenav {
+  color: #2d2d5e !important;
+}
+
+.myButt {
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 25px;
+  border: 2px solid black;
+  padding: 15px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.myButt:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fac710;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 300ms;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.myButt:hover:before {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 /*# sourceMappingURL=mainstyle.css.map */

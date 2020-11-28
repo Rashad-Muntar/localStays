@@ -4,11 +4,13 @@ $textColor: rgb(107, 107, 107);
 $hover: #f8d24a;
 $navBackground: rgb(241, 241, 241);
 $signatureColor: #d9c001;
+$maamebackground: #FCFBE9;
 $pageWidth: 85vw;
 
 
 body{
     font-family: 'Roboto', sans-serif;
+    
 }
 
 * {
@@ -809,6 +811,7 @@ footer{
     width: 100vw;
     background-color: rgb(231, 231, 231);
     padding-top: 30px;
+    
 
     h5{
         text-align: center;
@@ -985,87 +988,93 @@ footer{
 
 
 // CTA hover effect style
-@mixin transition($in) {
-	transition:$in;
-	-webkit-transition:$in;
-	-moz-transition:$in;
-	-o-transition:$in;
-	-ms-transition:$in;
-}
-@mixin transform($in) {
-	transform:$in;
-	-webkit-transform:$in;
-	-moz-transform:$in;
-	-o-transform:$in;
-	-ms-transform:$in;
-}
-@mixin animation($in) {
-	animation:$in;
-	-webkit-animation:$in;
-	-moz-animation:$in;
-	-o-animation:$in;
-	-ms-animation:$in;
-}
+// @mixin transition($in) {
+// 	transition:$in;
+// 	-webkit-transition:$in;
+// 	-moz-transition:$in;
+// 	-o-transition:$in;
+// 	-ms-transition:$in;
+// }
+// @mixin transform($in) {
+// 	transform:$in;
+// 	-webkit-transform:$in;
+// 	-moz-transform:$in;
+// 	-o-transform:$in;
+// 	-ms-transform:$in;
+// }
+// @mixin animation($in) {
+// 	animation:$in;
+// 	-webkit-animation:$in;
+// 	-moz-animation:$in;
+// 	-o-animation:$in;
+// 	-ms-animation:$in;
+// }
 
 
-.myButt {
-	outline:none;
-	border:none;
-	padding:20px;
-	display:block;
-	margin:50px auto;
-	cursor:pointer;
-	font-size:20px;
-    background-color:black;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 600;
-    padding: 12px 30px;
-    border-radius: 10px;
-    width: 100%;
-	position:relative;
+// .myButt {
+// 	outline:none;
+// 	border:none;
+// 	padding:20px;
+// 	display:block;
+// 	margin:50px auto;
+// 	cursor:pointer;
+// 	font-size:20px;
+//     background-color:black;
+//     text-decoration: none;
+//     text-align: center;
+//     font-size: 1.2em;
+//     font-weight: 600;
+//     padding: 12px 30px;
+//     border-radius: 10px;
+//     width: 100%;
+// 	position:relative;
 
 
-	@include transition(all 0.7s ease);
-}
+// 	@include transition(all 0.7s ease);
+// }
 
 
-// ################ ONE
+// // ################ ONE
 
-.one {
-	border-color:#fff;
-	overflow:hidden;
-	color:#fff;
+// .one {
+// 	border-color:#fff;
+// 	overflow:hidden;
+// 	color:#fff;
 
-	.insider {
-		background-color:#fff;
-		width:100%;
-		height:20px;
-		position:absolute;
-		left:-135px;
+// 	.insider {
+// 		background-color:#fff;
+// 		width:100%;
+// 		height:20px;
+// 		position:absolute;
+// 		left:-135px;
 
-		@include transform(rotateZ(45deg));
-	}
+// 		@include transform(rotateZ(45deg));
+// 	}
 
-	&:hover {
-		background-color:$primaryColor;
-		border-color:#fff;
-		color:#fff;
+// 	&:hover {
+// 		background-color:$primaryColor;
+// 		border-color:#fff;
+// 		color:#fff;
 
-		.insider {
-			@include transition(all 0.3s ease);
-			left:135px;
-		}
-	}
-}
+// 		.insider {
+// 			@include transition(all 0.3s ease);
+// 			left:135px;
+// 		}
+// 	}
+// }
 
 // know more page styles
+.know-container{
+    background: #FCFBE9;
+    height: 100vh;
+}
 
 #know-header-text{
     text-align: center;
     font-weight: 600;
-    margin-bottom: 70px;
+    padding: 40px;
+    
+
     span{
         color: $primaryColor;
     }
@@ -1074,8 +1083,8 @@ footer{
 .knowMore{
     width: $pageWidth;
     margin: 0 auto;
-    height: 800px;
-    margin-bottom: 100px;
+    height: 680px;
+    
     ul{
         height: 100%;
         li{
@@ -1087,7 +1096,7 @@ footer{
 
                 & > div{
                     border: 5px solid $primaryColor;
-                    height: 300px;
+                    height: 270px;
                     width: 60%;
                     display: flex;
                     justify-content: space-between;
@@ -1107,8 +1116,9 @@ footer{
                     }
 
                     img{
-                        width: 300px;
+                        width: 240px;
                         margin-right: 50px;
+                        background-color: #FCFBE9;
                     }
 
                     & > div{
@@ -1136,6 +1146,7 @@ footer{
                 }
                 .bottom{
                     margin-left: 20%;
+                    
 
                     img{
                         margin-right: 0;
@@ -1161,16 +1172,292 @@ footer{
             } 
         }
     }
+    a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        align-items: center;
+        
+
+        i{
+            text-align: center;
+            color: rgb(45, 45, 94);
+            
+        }
+        span{
+            font-weight: 700;
+            font-size: 2em;
+            color: $primaryColor;
+            margin-right: 30px;
+        }
+    }
 }
 
-.uk-light .uk-slidenav{
-    color: rgb(45, 45, 94) !important;
-    border: 3px solid rgb(45, 45, 94);
-    border-radius: 100%;
 
-    svg{
-        width: 25px !important;
-        height: 32px;
+// fees page styling
+.fees-container{
+    background-color: #FCFBE9;
+    padding-bottom: 70px;
+
+    .fee-header{
+       width: 100%;
+       margin: 0 auto;
+       text-align: center;
+       padding-top: 70px;
+       margin-bottom: 70px;
+
+        #fee-header-text{
+            margin: 0;
+            padding: 0;
+        }
+
+        p{
+            width: 600px;
+            margin: 0 auto;
+            padding: 0;
+            font-weight: 600;
+            padding-top: 20px;
+        }
+    }
+    .fees-wrapper{
+        width: $pageWidth;
+        margin: 0 auto;
+
+        .know-tabs-wrapper{
+            display: flex;
+            justify-content: space-between;
+            
+
+            & > div{
+                border: 5px solid $primaryColor;
+                width: 40%;
+                padding: 50px 80px;
+                box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+                transition: 500ms;
+
+                &:hover{
+                    transform: translate(3px, 3px);
+                    -webkit-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                    box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                }
+
+            & > div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+                img{
+                    width: 120px;
+                }
+
+                .text{
+
+                    h5{
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 1.4em;
+                    }
+                    p{
+                        font-size: 1.2em;
+                    }
+                }  
+            }
+
+            h5{
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.7em;
+            }
+
+            .top{
+                margin-bottom: 50px;
+            }
+            }
+        }
+    }
+    .next-arrow{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        
+        a{
+            text-decoration: none;
+            color: rgb(34, 34, 78);
+
+            span{
+                font-size: 1.8em;
+                font-weight: 600;
+                color: $primaryColor;
+            }
+        }
+    }
+  
+}
+
+
+// services page styling
+.service-container{
+    background-color: $maamebackground;
+    padding-top: 70px;
+
+    .fee-header{
+        width: 90vw;
+        margin: 0 auto;
+
+        h1{
+            text-align: center;
+            font-weight: 700;
+        }
+        p{
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 600;
+            font-size: 1.2em;
+            width: 600px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .btn-tabs{
+        width: $pageWidth;
+        margin: 0 auto;
+
+            .uk-subnav{
+                li{
+                    border-radius: 10px;
+
+                    a{
+                        border-radius: 10px;
+                        transition: 500ms !important;
+
+                        &:hover{
+                            background-color: $primaryColor;
+                        }
+                    }
+                }
+            }
     }
     
+    .fees-tab-wrapper{
+        width: $pageWidth;
+        margin: 0 auto;
+        margin-top: 70px;
+
+        & > div{
+            display: flex;
+            justify-content: space-between;
+
+            & > div{
+                height: 450px;
+                width: 450px;
+                border: 5px solid $primaryColor
+            }
+        }
+        .middle{
+            justify-content: center;
+        }
+    }
+    a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        align-items: center;
+        
+
+        i{
+            text-align: center;
+            color: rgb(45, 45, 94);
+            
+        }
+        span{
+            font-weight: 700;
+            font-size: 2em;
+            color: $primaryColor;
+            margin-right: 30px;
+        }
+    }
 }
+
+
+// about services tab uk custom styling
+
+.uk-subnav-pill > .uk-active > a {
+    background-color: $primaryColor;
+    color: rgb(39, 39, 39);
+}
+
+.uk-subnav-pill > * {
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+// .uk-tab::before {
+//     border-bottom: none;
+// }
+
+// .uk-tab > .uk-active > a{
+//     border-color: $maamebackground;
+//     font-weight: 600;
+//     background-color: $primaryColor;
+// }
+
+
+// know more uk under arrow custom styling
+.uk-light .uk-slidenav{
+    color: rgb(45, 45, 94) !important;
+    // border: 3px solid rgb(45, 45, 94);
+    // border-radius: 100%;
+
+    // svg{
+    //     width: 25px !important;
+    //     height: 32px;
+    // }
+    
+}
+
+.myButt {
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 15px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .myButt:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $primaryColor;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 300ms;
+    -o-transition: transform 300ms;
+    transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms;
+  }
+  
+  .myButt:hover:before {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
