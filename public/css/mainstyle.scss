@@ -687,7 +687,7 @@ header{
             border: none;
             font-size: 1.2em;
             font-weight: 600;
-            padding: 12px 30px;
+            padding: 20px 30px;
             border-radius: 10px;
             background-color: black;
             color: white;
@@ -988,80 +988,104 @@ footer{
 
 
 // CTA hover effect style
-// @mixin transition($in) {
-// 	transition:$in;
-// 	-webkit-transition:$in;
-// 	-moz-transition:$in;
-// 	-o-transition:$in;
-// 	-ms-transition:$in;
-// }
-// @mixin transform($in) {
-// 	transform:$in;
-// 	-webkit-transform:$in;
-// 	-moz-transform:$in;
-// 	-o-transform:$in;
-// 	-ms-transform:$in;
-// }
-// @mixin animation($in) {
-// 	animation:$in;
-// 	-webkit-animation:$in;
-// 	-moz-animation:$in;
-// 	-o-animation:$in;
-// 	-ms-animation:$in;
-// }
+@mixin transition($in) {
+	transition:$in;
+	-webkit-transition:$in;
+	-moz-transition:$in;
+	-o-transition:$in;
+	-ms-transition:$in;
+}
+@mixin transform($in) {
+	transform:$in;
+	-webkit-transform:$in;
+	-moz-transform:$in;
+	-o-transform:$in;
+	-ms-transform:$in;
+}
+@mixin animation($in) {
+	animation:$in;
+	-webkit-animation:$in;
+	-moz-animation:$in;
+	-o-animation:$in;
+	-ms-animation:$in;
+}
+
+.myButt {
+    text-decoration: none;
+	outline:none;
+	border:none;
+    padding:20px;
+    width: 100%;
+	display:block;
+	margin:50px auto;
+	cursor:pointer;
+	font-size:20px;
+	background-color:black;
+	position:relative;
+    border:2px solid #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+	@include transition(all 0.5s ease);
+}
 
 
-// .myButt {
-// 	outline:none;
-// 	border:none;
-// 	padding:20px;
-// 	display:block;
-// 	margin:50px auto;
-// 	cursor:pointer;
-// 	font-size:20px;
-//     background-color:black;
-//     text-decoration: none;
-//     text-align: center;
-//     font-size: 1.2em;
-//     font-weight: 600;
-//     padding: 12px 30px;
-//     border-radius: 10px;
-//     width: 100%;
-// 	position:relative;
+// ################ ONE
+
+.one {
+	border-color:#fff;
+	overflow:hidden;
+	color:#fff;
+
+	.insider {
+		background-color:#fff;
+		width:100%;
+		height:20px;
+		position:absolute;
+		left:-260px;
+
+		@include transform(rotateZ(45deg));
+	}
+
+	&:hover {
+		background-color:$primaryColor;
+		border-color:#fff;
+		color:black;
+
+		.insider {
+			@include transition(all 0.3s ease);
+			left:135px;
+		}
+	}
+}
+
+// ################ TWO
 
 
-// 	@include transition(all 0.7s ease);
-// }
+@-webkit-keyframes shakeThatBooty {
+	33% {
+		@include transform(rotateZ(10deg));
+	}
+	67% {
+		@include transform(rotateZ(-10deg));
+	}
+	100% {
+		@include transform(rotateZ(10deg));
+	}
+}
 
+@keyframes shakeThatBooty {
+	33% {
+		@include transform(rotateZ(10deg));
+	}
+	67% {
+		@include transform(rotateZ(-10deg));
+	}
+	100% {
+		@include transform(rotateZ(10deg));
+	}
+}
 
-// // ################ ONE
-
-// .one {
-// 	border-color:#fff;
-// 	overflow:hidden;
-// 	color:#fff;
-
-// 	.insider {
-// 		background-color:#fff;
-// 		width:100%;
-// 		height:20px;
-// 		position:absolute;
-// 		left:-135px;
-
-// 		@include transform(rotateZ(45deg));
-// 	}
-
-// 	&:hover {
-// 		background-color:$primaryColor;
-// 		border-color:#fff;
-// 		color:#fff;
-
-// 		.insider {
-// 			@include transition(all 0.3s ease);
-// 			left:135px;
-// 		}
-// 	}
-// }
 
 // know more page styles
 .know-container{
@@ -1422,42 +1446,4 @@ footer{
     
 }
 
-.myButt {
-    text-decoration: none;
-    color: black;
-    border-radius: 20px;
-    font-family: sans-serif;
-    font-size: 25px;
-    border: 2px solid black;
-    padding: 15px 40px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .myButt:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: $primaryColor;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    -webkit-transform-origin: bottom left;
-        -ms-transform-origin: bottom left;
-            transform-origin: bottom left;
-    -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    -webkit-transition: -webkit-transform 500ms;
-    transition: -webkit-transform 300ms;
-    -o-transition: transform 300ms;
-    transition: transform 300ms;
-    transition: transform 300ms, -webkit-transform 300ms;
-  }
-  
-  .myButt:hover:before {
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
+
