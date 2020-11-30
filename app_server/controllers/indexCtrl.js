@@ -10,8 +10,12 @@ const insight = (req, res) =>{
     res.render("products/insight")
 }
 
-const hiwks = (req, res)=>{
+const aboutService = (req, res)=>{
     res.render("products/aboutService")
+}
+
+const howItWorks = (req, res)=>{
+    res.render("products/howItWorks")
 }
 
 const FP = (req, res) =>{
@@ -102,7 +106,8 @@ module.exports = {
     home,
     aboutUs,
     insight,
-    hiwks,
+    aboutService,
+    howItWorks,
     FP,
     PC,
     PD,

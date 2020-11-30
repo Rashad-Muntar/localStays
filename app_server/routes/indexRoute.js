@@ -12,7 +12,9 @@ router.get("/about-us", indexCtrl.aboutUs)
 
 router.get("/insight", indexCtrl.insight)
 
-router.get("/about-services", indexCtrl.hiwks)
+router.get("/about-services", indexCtrl.aboutService)
+
+router.get("/how-it-works", indexCtrl.howItWorks)
 
 router.get("/find-property", indexCtrl.FP)
 
