@@ -18,6 +18,14 @@ const howItWorks = (req, res)=>{
     res.render("products/howItWorks")
 }
 
+const whyItWorks = (req, res)=>{
+    res.render("products/whyItWorks")
+}
+
+const getStarted = (req, res)=>{
+    res.render("products/getStarted")
+}
+
 const FP = (req, res) =>{
     res.render("products/findProperties")
 }
@@ -108,6 +116,8 @@ module.exports = {
     insight,
     aboutService,
     howItWorks,
+    whyItWorks,
+    getStarted,
     FP,
     PC,
     PD,
