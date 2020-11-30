@@ -16,6 +16,10 @@ router.get("/about-services", indexCtrl.aboutService)
 
 router.get("/how-it-works", indexCtrl.howItWorks)
 
+router.get("/why-it-works", indexCtrl.whyItWorks)
+
+router.get("/get-started", indexCtrl.getStarted)
+
 router.get("/find-property", indexCtrl.FP)
 
 router.get("/property-Contracting", indexCtrl.PC)
