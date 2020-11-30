@@ -1,7 +1,8 @@
-$('.uk-dotnav li').parent("a").click(function() {
-  $(this).removeClass('sidebarActive');
-  $(this).addClass('sidebarActive');
-});
+// $('.uk-dotnav li').children().click(function() {
+//   $(this).addClass('sidebarActive');
+//   $(this).siblings().removeClass('sidebarActive')
+// });
+
 
 setTimeout(() => {
   $(function() {
