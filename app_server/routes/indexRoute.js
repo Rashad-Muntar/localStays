@@ -14,13 +14,17 @@ router.get("/insight", indexCtrl.insight)
 
 router.get("/about-services", indexCtrl.aboutService)
 
+router.get("/about-services-tabs", indexCtrl.aboutServiceTabs)
+
 router.get("/how-it-works", indexCtrl.howItWorks)
 
 router.get("/why-it-works", indexCtrl.whyItWorks)
 
 router.get("/get-started", indexCtrl.getStarted)
 
-router.get("/find-property", indexCtrl.FP)
+router.get("/what-is-included", indexCtrl.WhatsIncluded)
+
+router.get("/how-much-to-save", indexCtrl.moneyToSave)
 
 router.get("/property-Contracting", indexCtrl.PC)
 
