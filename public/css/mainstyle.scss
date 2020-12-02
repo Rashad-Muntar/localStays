@@ -6,7 +6,14 @@ $navBackground: rgb(241, 241, 241);
 $signatureColor: #d9c001;
 $maamebackground: #FCF6E9;
 $pageWidth: 85vw;
-
+$otherPageWidth: 50vw;
+$boxShadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+@mixin tabHover {  
+        transform: translate(3px, 3px);
+        -webkit-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+        box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -907,16 +914,11 @@ footer{
                     align-items: center;
                     padding: 20px 40px;
                     border-radius: 6px;
-                    -webkit-box-shadow: 0px 1px 37px -30px rgba(0,0,0,0.75);
-                    -moz-box-shadow: 0px 1px 37px -30px rgba(0,0,0,0.75);
-                    box-shadow: 0px 1px 37px -30px rgba(0,0,0,0.75);
+                   box-shadow: $boxShadow;
                     transition: 500ms;
 
                     &:hover{
-                        transform: translate(3px, 3px);
-                        -webkit-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
-                        -moz-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
-                        box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                       @include tabHover();
                     }
 
                     img{
@@ -1000,98 +1002,108 @@ footer{
 
 
 // fees page styling
-.fees-container{
-    background-color: #FCFBE9;
+.included-container{
+    background-color: $maamebackground;
     padding-bottom: 70px;
-
-    .fee-header{
-       width: 100%;
-       margin: 0 auto;
-       text-align: center;
-       padding-top: 70px;
-       margin-bottom: 70px;
-
-        #fee-header-text{
-            margin: 0;
-            padding: 0;
-        }
-
-        p{
-            width: 600px;
-            margin: 0 auto;
-            padding: 0;
-            font-weight: 600;
-            padding-top: 20px;
-        }
-    }
-    .fees-wrapper{
-        width: $pageWidth;
-        margin: 0 auto;
-
-        .know-tabs-wrapper{
-            display: flex;
-            justify-content: space-between;
-            
-
-            & > div{
-                border: 5px solid $primaryColor;
-                width: 40%;
-                padding: 50px 80px;
-                box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
-                transition: 500ms;
-
-                &:hover{
-                    transform: translate(3px, 3px);
-                    -webkit-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
-                    -moz-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
-                    box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
-                }
-
-            & > div{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                
-                img{
-                    width: 120px;
-                }
-
-                .text{
-
-                    h5{
-                        text-align: center;
-                        font-weight: 700;
-                        font-size: 1.4em;
-                    }
-                    p{
-                        font-size: 1.2em;
-                    }
-                }  
-            }
-
-            h5{
-                text-align: center;
-                font-weight: 700;
-                font-size: 1.7em;
-            }
-
-            .top{
-                margin-bottom: 50px;
-            }
-            }
-        }
-    }
   
 }
 
 
 // services page styling
+
+// main page styling
+
 .service-container{
     background-color: $maamebackground;
     padding-top: 70px;
+    padding-bottom: 70px;
 
     .fee-header{
+        width: 90vw;
+        margin: 0 auto;
+
+        h1{
+            text-align: center;
+            font-weight: 700;
+        }
+        p{
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 600;
+            font-size: 1.2em;
+            width: 600px;
+            margin-bottom: 50px;
+        }
+        span{
+            color:$primaryColor;
+            font-size: 0.8em;
+        }
+    }
+    .fees-tab-wrapper{
+        width: 62vw;
+        margin: 0 auto;
+        
+        & > div{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+            
+
+            & > div{
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                justify-content: space-between;
+                align-items: center;
+                width: 45%;
+                padding: 30px 30px;
+                box-shadow: $boxShadow;
+                transition: 500ms;
+
+                &:hover{
+                    @include tabHover()
+                }
+                a{
+                    align-self: flex-start;
+                    text-decoration: none;
+                    background-color: $primaryColor;
+                    margin: 0;
+                }
+
+            & > div{
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+                align-items: center;
+                
+                img{
+                    width: 150px;
+                }
+
+                p{
+                    margin-top: 20px;
+                }
+                
+            }
+            h4{
+                font-size: 1.3em;
+                font-weight: 700;
+                margin: 0;
+                padding: 0;
+                
+            }
+            }
+        }
+    }
+}
+
+// tabs page style
+.service-tabs-container{
+    background-color: $maamebackground;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .service-header{
         width: 90vw;
         margin: 0 auto;
 
@@ -1110,12 +1122,18 @@ footer{
     }
 
     .btn-tabs{
-        width: $pageWidth;
+        width: $otherPageWidth;
         margin: 0 auto;
 
             .uk-subnav{
+                &:nth-child(1){
+                    margin-left: 45px;
+                }
                 li{
                     border-radius: 10px;
+                    background-color: black;
+                    padding-left: 0 !important;
+                    margin-right: 20px;
 
                     a{
                         border-radius: 10px;
@@ -1129,23 +1147,41 @@ footer{
             }
     }
     
-    .fees-tab-wrapper{
-        width: $pageWidth;
+    .service-tabs-wrapper{
+        width: $otherPageWidth;
         margin: 0 auto;
         margin-top: 70px;
 
         & > div{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
 
-            & > div{
-                height: 450px;
-                width: 450px;
-                border: 5px solid $primaryColor
+            & > a{
+                height: 250px;
+                width: 350px;
+                background-color: white;
+                padding: 50px 80px;
+                box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+                transition: 500ms;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                &:hover{
+                    transform: translate(3px, 3px);
+                    -webkit-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                    box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                }
+
+                h5{
+                    font-weight: 700;
+                    font-size: 1.4em;
+                    
+                }
             }
-        }
-        .middle{
-            justify-content: center;
         }
     }
     a{
@@ -1168,6 +1204,8 @@ footer{
             margin-right: 30px;
         }
     }
+
+
 }
 
 
@@ -1176,12 +1214,6 @@ footer{
 .uk-subnav-pill > .uk-active > a {
     background-color: $primaryColor;
     color: rgb(39, 39, 39);
-}
-
-.uk-subnav-pill > * {
-    background: rgb(39, 39, 39);
-    border-radius: 10px;
-    margin-right: 10px;
 }
 
 
@@ -1225,6 +1257,24 @@ footer{
     transition-property: background-color, border-color;
 }
 
+
+// semantic ui custom styling
+
+.ui.red.label, .ui.red.labels .label {
+    background-color: $primaryColor!important;
+    border-color: $primaryColor!important;
+    color: black!important;
+}
+
+.ui.red.label, .ui:hover {
+    background-color: $primaryColor!important;
+    border-color: $primaryColor!important;
+    color: black!important;
+}
+
+.ui.red.ribbon.label {
+    border-color: $primaryColor!important;
+}
 
 // general styles
 .next-arrow{

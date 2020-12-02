@@ -14,6 +14,10 @@ const aboutService = (req, res)=>{
     res.render("products/aboutService")
 }
 
+const aboutServiceTabs = (req, res)=>{
+    res.render("products/aboutServicesTabs")
+}
+
 const howItWorks = (req, res)=>{
     res.render("products/howItWorks")
 }
@@ -26,8 +30,12 @@ const getStarted = (req, res)=>{
     res.render("products/getStarted")
 }
 
-const FP = (req, res) =>{
-    res.render("products/findProperties")
+const WhatsIncluded = (req, res) =>{
+    res.render("products/whatIsIncluded")
+}
+
+const moneyToSave = (req, res) =>{
+    res.render("products/moneyToSave")
 }
 
 const PC = (req, res) =>{
@@ -115,10 +123,12 @@ module.exports = {
     aboutUs,
     insight,
     aboutService,
+    aboutServiceTabs,
     howItWorks,
     whyItWorks,
     getStarted,
-    FP,
+    WhatsIncluded,
+    moneyToSave,
     PC,
     PD,
     FAQS,
