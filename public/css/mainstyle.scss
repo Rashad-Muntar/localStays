@@ -1,8 +1,4 @@
-/*
-variable declarations
-*/
-
-
+//  css variables
 $primaryColor: #fac710;
 $textColor: rgb(107, 107, 107);
 $hover: #f8d24a;
@@ -13,10 +9,9 @@ $pageWidth: 85vw;
 $otherPageWidth: 50vw;
 $boxShadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
 @mixin tabHover {  
-        -webkit-transform: translate(3px, 3px);  
-            -ms-transform: translate(3px, 3px);  
-                transform: translate(3px, 3px);
+        transform: translate(3px, 3px);
         -webkit-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
         box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
 }
 
@@ -34,8 +29,7 @@ main{
 * {
 	margin: 0;
 	padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -76,29 +70,17 @@ header{
     .social-nav{
         width: 100%;
         border-bottom: 1px solid rgb(139, 139, 139);
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: space-between;
+        align-items: center;
         height: 60px;
 
         .social-icons{
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
             width: $pageWidth;
             height: 100%;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            justify-content: space-between;
+            align-items: center;
             margin: 0 auto;
 
             div{
@@ -125,15 +107,9 @@ header{
     .logo-nav{
         width: $pageWidth;
         margin: 0 auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: space-between;
+        align-items: center;
         height: 60px;
 
         .brand{
@@ -141,8 +117,6 @@ header{
         }
 
 .center{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 
     li{
@@ -171,8 +145,6 @@ header{
             background-color: $navBackground;
             padding: 0;
             display: none;
-            -webkit-transition: 1s;
-            -o-transition: 1s;
             transition: 1s;
             width: 180px;
             border-bottom-right-radius: 10px;
@@ -253,8 +225,7 @@ header{
 }
 .uk-dotnav > * > * {
     display: block;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 5px;
     height: 70px;
     background: $textColor !important;
@@ -262,11 +233,7 @@ header{
     overflow: hidden;
     white-space: nowrap;
     border: 1px solid rgba(102, 102, 102, 0.4) !important;
-    -webkit-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
-    -webkit-transition-property: background-color, border-color;
-    -o-transition-property: background-color, border-color;
     transition-property: background-color, border-color;
 }
 }
@@ -278,17 +245,9 @@ header{
             margin-top: 70px;
             .text-1{
                 position: relative !important;
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
            
-                -webkit-box-orient: vertical;
-           
-                -webkit-box-direction: normal;
-           
-                    -ms-flex-direction: column;
-           
-                        flex-direction: column;
+                flex-direction: column;
                 top: 15%;
     
                 .head-text-1{
@@ -334,17 +293,9 @@ header{
 
             .text-2{
                 position: relative !important;
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
         
-                -webkit-box-orient: vertical;
-        
-                -webkit-box-direction: normal;
-        
-                    -ms-flex-direction: column;
-        
-                        flex-direction: column;
+                flex-direction: column;
                 top: 15%;
 
                 .head-text-2{
@@ -391,17 +342,9 @@ header{
 
                     .text-3{
             position: relative !important;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
        
-            -webkit-box-orient: vertical;
-       
-            -webkit-box-direction: normal;
-       
-                -ms-flex-direction: column;
-       
-                    flex-direction: column;
+            flex-direction: column;
             top: 15%;
 
             .head-text-3{
@@ -443,17 +386,9 @@ header{
         .head-text-wrap-4{
             .text-4{
                 position: relative !important;
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
            
-                -webkit-box-orient: vertical;
-           
-                -webkit-box-direction: normal;
-           
-                    -ms-flex-direction: column;
-           
-                        flex-direction: column;
+                flex-direction: column;
                 top: 5%;
     
                 .head-text-4{
@@ -526,11 +461,7 @@ header{
     }
     form{
 
-        -webkit-box-pack: center;
-
-            -ms-flex-pack: center;
-
-                justify-content: center;
+        justify-content: center;
 
         input{
             border: 1px solid $primaryColor;
@@ -586,15 +517,9 @@ header{
             color: black !important;
 
     .facts-wrapper{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: space-between;
+        align-items: center;
         height: 100%;
     }
   
@@ -603,21 +528,11 @@ header{
                 width: 350px;
                 border: 60px solid $primaryColor;
                 background-color: white;
-                -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-                        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-                display: -webkit-box;
-                display: -ms-flexbox;
+                box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
                 display: flex;
-                -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column; 
+                justify-content: center;
+                align-items: center;
+                flex-direction: column; 
                 font-size: 2em;
                 color: gray;
                 font-weight: 700;
@@ -698,27 +613,14 @@ footer{
     .footer-wrapper{
         width: $pageWidth;
         margin: 0 auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: space-between;
+        align-items: center;
 
         & > div{
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            flex-direction: column;
+            justify-content: center;
             margin-right: 30px;
             width: 20%;
             padding-bottom: 30px;
@@ -758,15 +660,9 @@ footer{
         p{
             width: $pageWidth;
             margin: 0 auto;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            justify-content: center;
+            align-items: center;
             height: 100%;
             letter-spacing: 2px;
         }
@@ -782,8 +678,6 @@ footer{
     right: 0;
     background-color: $navBackground;
     padding-top: 10px;
-    -webkit-transition: 400ms;
-    -o-transition: 400ms;
     transition: 400ms;
     
     .cookie-content{
@@ -794,12 +688,8 @@ footer{
 
         #cookies-btns{
             width: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between;
+            justify-content: space-between;
             a{
                 background-color: $primaryColor;
                 padding: 10px 30px;
@@ -876,9 +766,7 @@ footer{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
 
 
@@ -970,18 +858,6 @@ footer{
 	}
 }
 
-@-webkit-keyframes shakeThatBooty {
-	33% {
-		@include transform(rotateZ(10deg));
-	}
-	67% {
-		@include transform(rotateZ(-10deg));
-	}
-	100% {
-		@include transform(rotateZ(10deg));
-	}
-}
-
 @keyframes shakeThatBooty {
 	33% {
 		@include transform(rotateZ(10deg));
@@ -1022,34 +898,20 @@ footer{
         li{
             .tabs-wrapper{
                 width: 100%;
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
+                flex-direction: column;
                 height: 100%;
 
                 & > div{
                     border: 5px solid $primaryColor;
                     height: 270px;
                     width: 60%;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
                     display: flex;
-                    -webkit-box-pack: justify;
-                        -ms-flex-pack: justify;
-                            justify-content: space-between;
-                    -webkit-box-align: center;
-                        -ms-flex-align: center;
-                            align-items: center;
+                    justify-content: space-between;
+                    align-items: center;
                     padding: 20px 40px;
                     border-radius: 6px;
-                   -webkit-box-shadow: $boxShadow;
-                           box-shadow: $boxShadow;
-                    -webkit-transition: 500ms;
-                    -o-transition: 500ms;
+                   box-shadow: $boxShadow;
                     transition: 500ms;
 
                     &:hover{
@@ -1115,16 +977,10 @@ footer{
     }
     a{
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
         text-decoration: none;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
         
 
         i{
@@ -1185,60 +1041,47 @@ footer{
         margin: 0 auto;
         
         & > div{
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: space-evenly;
-                -ms-flex-pack: space-evenly;
-                    justify-content: space-evenly;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            justify-content: space-evenly;
             margin-bottom: 30px;
             
 
             & > div{
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
+                flex-direction: column;
                 background-color: white;
                 -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                        justify-content: space-between;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
+                -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                align-items: center;
                 width: 45%;
                 padding: 30px 30px;
-                -webkit-box-shadow: $boxShadow;
-                        box-shadow: $boxShadow;
-                -webkit-transition: 500ms;
-                -o-transition: 500ms;
+                box-shadow: $boxShadow;
                 transition: 500ms;
 
                 &:hover{
                     @include tabHover()
                 }
                 a{
-                    -ms-flex-item-align: start;
-                        align-self: flex-start;
+                    align-self: flex-start;
                     text-decoration: none;
                     background-color: $primaryColor;
                     margin: 0;
                 }
 
             & > div{
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
                 -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                        justify-content: space-between;
+                -webkit-justify-content: space-between;
+                 -ms-flex-pack: justify;
+                 justify-content: space-between;
                 height: 100%;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
+                align-items: center;
                 
                 img{
                     width: 150px;
@@ -1301,8 +1144,6 @@ footer{
 
                     a{
                         border-radius: 10px;
-                        -webkit-transition: 500ms !important;
-                        -o-transition: 500ms !important;
                         transition: 500ms !important;
 
                         &:hover{
@@ -1319,12 +1160,8 @@ footer{
         margin-top: 70px;
 
         & > div{
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: space-evenly;
-                -ms-flex-pack: space-evenly;
-                    justify-content: space-evenly;
+            justify-content: space-evenly;
             margin-bottom: 50px;
 
             & > a{
@@ -1332,31 +1169,17 @@ footer{
                 width: 350px;
                 background-color: white;
                 padding: 50px 80px;
-                -webkit-box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
-                        box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
-                -webkit-transition: 500ms;
-                -o-transition: 500ms;
+                box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
                 transition: 500ms;
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
-                -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
-                        
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
 
                 &:hover{
-                    -webkit-transform: translate(3px, 3px);
-                        -ms-transform: translate(3px, 3px);
-                            transform: translate(3px, 3px);
+                    transform: translate(3px, 3px);
                     -webkit-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
                     box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
                 }
 
@@ -1370,16 +1193,10 @@ footer{
     }
     a{
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
         text-decoration: none;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
         
 
         i{
@@ -1397,6 +1214,7 @@ footer{
 
 
 }
+
 
 // about services tab uk custom styling
 
@@ -1433,8 +1251,7 @@ footer{
 
 .uk-dotnav > * > * {
     display: block;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 40px;
     height: 5px;
     border-radius: none !important;
@@ -1443,11 +1260,7 @@ footer{
     overflow: hidden;
     white-space: nowrap;
     border: 1px solid rgba(102, 102, 102, 0.4);
-    -webkit-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
-    -webkit-transition-property: background-color, border-color;
-    -o-transition-property: background-color, border-color;
     transition-property: background-color, border-color;
 }
 
@@ -1474,12 +1287,8 @@ footer{
 .next-arrow{
     width: 100%;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-top: 50px;
     
     a{
@@ -1497,16 +1306,9 @@ footer{
 #started{
     width: 100%;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 50px;
 
     #started-btn{
@@ -1535,42 +1337,25 @@ footer{
        margin-top: 70px;
 
        & > div{
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: space-evenly;
-                -ms-flex-pack: space-evenly;
-                    justify-content: space-evenly;
+            justify-content: space-evenly;
             margin-bottom: 40px;
         & > div{
             height: 230px;
             width: 29%;
             background-color: white;
-            -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-                    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-            display: -webkit-box;
-            display: -ms-flexbox;
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
             display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             padding: 0 30px;
-            -webkit-transition: 500ms;
-            -o-transition: 500ms;
             transition: 500ms;
 
             &:hover{
-                -webkit-transform: translate(3px, 3px);
-                    -ms-transform: translate(3px, 3px);
-                        transform: translate(3px, 3px);
+                transform: translate(3px, 3px);
                 -webkit-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
                 box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
             }
             
@@ -1611,26 +1396,18 @@ footer{
        margin: 0 auto;
        margin-top: 70px;
        background-color: white;
-        -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-                box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
         padding: 40px 70px;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
         line-height: 35px;
         font-size: 1.6em;
-        -webkit-transition: 500ms;
-        -o-transition: 500ms;
         transition: 500ms;
 
             &:hover{
-                -webkit-transform: translate(3px, 3px);
-                    -ms-transform: translate(3px, 3px);
-                        transform: translate(3px, 3px);
+                transform: translate(3px, 3px);
                 -webkit-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
                 box-shadow: 0px 1px 37px -20px rgba(0,0,0,0.75);
             }
        
