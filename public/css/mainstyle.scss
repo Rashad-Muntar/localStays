@@ -1184,16 +1184,16 @@ footer{
         }
     }
     .fees-tab-wrapper{
-        width: 62vw;
+        width: 58vw;
         margin: 0 auto;
         
         & > div{
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: space-evenly;
-                -ms-flex-pack: space-evenly;
-                    justify-content: space-evenly;
+            -webkit-box-pack: space-between;
+                -ms-flex-pack: space-between;
+                    justify-content: space-between;
             margin-bottom: 30px;
             
 
@@ -1212,7 +1212,7 @@ footer{
                 -webkit-box-align: center;
                     -ms-flex-align: center;
                         align-items: center;
-                width: 45%;
+                width: 48%;
                 padding: 30px 30px;
                 -webkit-box-shadow: $boxShadow;
                         box-shadow: $boxShadow;
@@ -1317,7 +1317,7 @@ footer{
     }
     
     .service-tabs-wrapper{
-        width: $otherPageWidth;
+        width: 45vw;
         margin: 0 auto;
         margin-top: 70px;
 
@@ -1325,9 +1325,9 @@ footer{
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: space-evenly;
-                -ms-flex-pack: space-evenly;
-                    justify-content: space-evenly;
+            -webkit-box-pack: space-between;
+                -ms-flex-pack: space-between;
+                    justify-content: space-between;
             margin-bottom: 50px;
 
             & > a{

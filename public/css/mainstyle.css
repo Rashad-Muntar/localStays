@@ -1108,7 +1108,7 @@ footer .copy-right p {
 }
 
 .service-container .fees-tab-wrapper {
-  width: 62vw;
+  width: 58vw;
   margin: 0 auto;
 }
 
@@ -1116,9 +1116,9 @@ footer .copy-right p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
@@ -1137,7 +1137,7 @@ footer .copy-right p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 45%;
+  width: 48%;
   padding: 30px 30px;
   -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
@@ -1240,7 +1240,7 @@ footer .copy-right p {
 }
 
 .service-tabs-container .service-tabs-wrapper {
-  width: 50vw;
+  width: 45vw;
   margin: 0 auto;
   margin-top: 70px;
 }
@@ -1249,9 +1249,9 @@ footer .copy-right p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 
