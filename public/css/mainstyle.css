@@ -1188,6 +1188,10 @@ footer .copy-right p {
   padding: 0;
 }
 
+.service-container .fees-tab-wrapper > div > div h4 span {
+  color: #fac710;
+}
+
 .service-tabs-container {
   background-color: #FCF6E9;
   padding-top: 70px;
@@ -1443,9 +1447,9 @@ footer .copy-right p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
   margin-bottom: 40px;
 }
 
@@ -1535,5 +1539,13 @@ footer .copy-right p {
 
 .get-started .get-started-wrapper span {
   color: #fac710;
+}
+
+#whats-included {
+  margin-bottom: 70px;
+}
+
+#whats-included {
+  margin-bottom: 70px;
 }
 /*# sourceMappingURL=mainstyle.css.map */

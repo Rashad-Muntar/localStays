@@ -24,9 +24,11 @@ router.get("/get-started", indexCtrl.getStarted)
 
 router.get("/what-is-included", indexCtrl.WhatsIncluded)
 
+router.get("/what-is-included-2", indexCtrl.includedTwo)
+
 router.get("/how-much-to-save", indexCtrl.moneyToSave)
 
-router.get("/property-Contracting", indexCtrl.PC)
+router.get("/about-our-fees", indexCtrl.aboutFees)
 
 router.get("/property-design", indexCtrl.PD)
 

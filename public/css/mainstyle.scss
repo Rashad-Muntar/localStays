@@ -1169,6 +1169,8 @@ footer{
         h1{
             text-align: center;
             font-weight: 700;
+
+            
         }
         p{
             text-align: center;
@@ -1258,6 +1260,9 @@ footer{
                 margin: 0;
                 padding: 0;
                 
+                span{
+                    color: $primaryColor;
+                }
             }
             }
         }
@@ -1541,9 +1546,9 @@ footer{
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: space-evenly;
-                -ms-flex-pack: space-evenly;
-                    justify-content: space-evenly;
+            -webkit-box-pack: space-between;
+                -ms-flex-pack: space-between;
+                    justify-content: space-between;
             margin-bottom: 40px;
         & > div{
             height: 230px;
@@ -1642,3 +1647,14 @@ footer{
         }
    }
 }
+
+// get Started page styling
+#whats-included{
+    margin-bottom: 70px;
+}
+
+// how much money to save page styling
+#whats-included{
+    margin-bottom: 70px;
+}
+
