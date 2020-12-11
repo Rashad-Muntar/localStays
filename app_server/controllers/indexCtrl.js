@@ -34,12 +34,17 @@ const WhatsIncluded = (req, res) =>{
     res.render("products/whatIsIncluded")
 }
 
+const includedTwo = (req, res) =>{
+    res.render("products/whatIsIncludedTwo")
+}
+
+
 const moneyToSave = (req, res) =>{
     res.render("products/moneyToSave")
 }
 
-const PC = (req, res) =>{
-    res.render("products/propertyContract")
+const aboutFees = (req, res) =>{
+    res.render("products/aboutFees")
 }
 
 const PD = (req, res) =>{
@@ -128,8 +133,9 @@ module.exports = {
     whyItWorks,
     getStarted,
     WhatsIncluded,
+    includedTwo,
     moneyToSave,
-    PC,
+    aboutFees,
     PD,
     FAQS,
     short,

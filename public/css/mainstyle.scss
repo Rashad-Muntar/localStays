@@ -1022,6 +1022,8 @@ footer{
         h1{
             text-align: center;
             font-weight: 700;
+
+            
         }
         p{
             text-align: center;
@@ -1037,16 +1039,22 @@ footer{
         }
     }
     .fees-tab-wrapper{
-        width: 62vw;
+        width: 58vw;
         margin: 0 auto;
         
         & > div{
             display: flex;
+<<<<<<< HEAD
             -webkit-box-pack: justify;
             -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
             justify-content: space-between;
             justify-content: space-evenly;
+=======
+            -webkit-box-pack: space-between;
+                -ms-flex-pack: space-between;
+                    justify-content: space-between;
+>>>>>>> firstChild
             margin-bottom: 30px;
             
 
@@ -1055,11 +1063,20 @@ footer{
                 flex-direction: column;
                 background-color: white;
                 -webkit-box-pack: justify;
+<<<<<<< HEAD
                 -webkit-justify-content: space-between;
                 -ms-flex-pack: justify;
                 justify-content: space-between;
                 align-items: center;
                 width: 45%;
+=======
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 48%;
+>>>>>>> firstChild
                 padding: 30px 30px;
                 box-shadow: $boxShadow;
                 transition: 500ms;
@@ -1098,6 +1115,9 @@ footer{
                 margin: 0;
                 padding: 0;
                 
+                span{
+                    color: $primaryColor;
+                }
             }
             }
         }
@@ -1155,13 +1175,19 @@ footer{
     }
     
     .service-tabs-wrapper{
-        width: $otherPageWidth;
+        width: 45vw;
         margin: 0 auto;
         margin-top: 70px;
 
         & > div{
             display: flex;
+<<<<<<< HEAD
             justify-content: space-evenly;
+=======
+            -webkit-box-pack: space-between;
+                -ms-flex-pack: space-between;
+                    justify-content: space-between;
+>>>>>>> firstChild
             margin-bottom: 50px;
 
             & > a{
@@ -1338,7 +1364,13 @@ footer{
 
        & > div{
             display: flex;
+<<<<<<< HEAD
             justify-content: space-evenly;
+=======
+            -webkit-box-pack: space-between;
+                -ms-flex-pack: space-between;
+                    justify-content: space-between;
+>>>>>>> firstChild
             margin-bottom: 40px;
         & > div{
             height: 230px;
@@ -1416,3 +1448,14 @@ footer{
         }
    }
 }
+
+// get Started page styling
+#whats-included{
+    margin-bottom: 70px;
+}
+
+// how much money to save page styling
+#whats-included{
+    margin-bottom: 70px;
+}
+

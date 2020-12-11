@@ -1,13 +1,57 @@
 <%- include("../partials/header") %>
-<section class="included-container">
-    <div class="fees-wrapper">
-    <div class="fee-header">
+<section class="service-tabs-container">
+    <div class="service-header" id="whats-included">
         <h1 id="fee-header-text">How much can I save?</h1>
-        <!-- <p>Choose the package that best suits your needs and you are one click away from your Dream or Investment Property</p> -->
+      
     </div>
-            
+    <div class="btn-tabs">
+        <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
+            <li><a href="#">Property User</a></li>
+            <li><a href="#">Property Investor</a></li>
+        </ul>
+        
+        <ul class="uk-switcher uk-margin">
+            <li>  
+               First Tab
+               <div class="btn-tabs">
+                <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
+                    <li><a href="#">Property User</a></li>
+                    <li><a href="#">Property Investor</a></li>
+                </ul>
+                
+                <ul class="uk-switcher uk-margin">
+                    <li>  
+                       First Tab
+                    </li>
+                    <li> 
+                       Second tab
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <li> 
+               Second tab
+               <div class="btn-tabs">
+                <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
+                    <li><a href="#">Property User</a></li>
+                    <li><a href="#">Property Investor</a></li>
+                </ul>
+                
+                <ul class="uk-switcher uk-margin">
+                    <li>  
+                       First Tab
+                    </li>
+                    <li> 
+                       Second tab
+                    </li>
+                </ul>
+            </div>
+            </li>
+        </ul>
+    </div>
+    
+   
 </section>
-
 
 
 

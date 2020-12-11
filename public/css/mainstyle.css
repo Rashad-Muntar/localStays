@@ -1078,7 +1078,7 @@ footer .copy-right p {
 }
 
 .service-container .fees-tab-wrapper {
-  width: 62vw;
+  width: 58vw;
   margin: 0 auto;
 }
 
@@ -1086,12 +1086,18 @@ footer .copy-right p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+=======
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+>>>>>>> firstChild
   margin-bottom: 30px;
 }
 
@@ -1108,9 +1114,15 @@ footer .copy-right p {
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
+<<<<<<< HEAD
       -ms-flex-align: center;
           align-items: center;
   width: 45%;
+=======
+  -ms-flex-align: center;
+  align-items: center;
+  width: 48%;
+>>>>>>> firstChild
   padding: 30px 30px;
   -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
           box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
@@ -1159,6 +1171,10 @@ footer .copy-right p {
   font-weight: 700;
   margin: 0;
   padding: 0;
+}
+
+.service-container .fees-tab-wrapper > div > div h4 span {
+  color: #fac710;
 }
 
 .service-tabs-container {
@@ -1213,7 +1229,7 @@ footer .copy-right p {
 }
 
 .service-tabs-container .service-tabs-wrapper {
-  width: 50vw;
+  width: 45vw;
   margin: 0 auto;
   margin-top: 70px;
 }
@@ -1222,9 +1238,15 @@ footer .copy-right p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+=======
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+>>>>>>> firstChild
   margin-bottom: 50px;
 }
 
@@ -1416,9 +1438,15 @@ footer .copy-right p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+=======
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+>>>>>>> firstChild
   margin-bottom: 40px;
 }
 
@@ -1508,5 +1536,13 @@ footer .copy-right p {
 
 .get-started .get-started-wrapper span {
   color: #fac710;
+}
+
+#whats-included {
+  margin-bottom: 70px;
+}
+
+#whats-included {
+  margin-bottom: 70px;
 }
 /*# sourceMappingURL=mainstyle.css.map */
