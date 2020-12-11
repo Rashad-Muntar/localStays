@@ -1086,18 +1086,13 @@ footer .copy-right p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-=======
+  justify-content: space-evenly;
   -webkit-box-pack: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
->>>>>>> firstChild
   margin-bottom: 30px;
 }
 
@@ -1113,16 +1108,14 @@ footer .copy-right p {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-<<<<<<< HEAD
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 45%;
-=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   width: 48%;
->>>>>>> firstChild
   padding: 30px 30px;
   -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
           box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
@@ -1238,15 +1231,9 @@ footer .copy-right p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-=======
   -webkit-box-pack: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
->>>>>>> firstChild
   margin-bottom: 50px;
 }
 
@@ -1438,15 +1425,10 @@ footer .copy-right p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-=======
+  justify-content: space-evenly;
   -webkit-box-pack: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
->>>>>>> firstChild
   margin-bottom: 40px;
 }
 

@@ -1044,17 +1044,17 @@ footer{
         
         & > div{
             display: flex;
-<<<<<<< HEAD
+
             -webkit-box-pack: justify;
             -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
             justify-content: space-between;
             justify-content: space-evenly;
-=======
+
             -webkit-box-pack: space-between;
                 -ms-flex-pack: space-between;
                     justify-content: space-between;
->>>>>>> firstChild
+
             margin-bottom: 30px;
             
 
@@ -1063,20 +1063,20 @@ footer{
                 flex-direction: column;
                 background-color: white;
                 -webkit-box-pack: justify;
-<<<<<<< HEAD
+
                 -webkit-justify-content: space-between;
                 -ms-flex-pack: justify;
                 justify-content: space-between;
                 align-items: center;
                 width: 45%;
-=======
+
                     -ms-flex-pack: justify;
                         justify-content: space-between;
                 -webkit-box-align: center;
                     -ms-flex-align: center;
                         align-items: center;
                 width: 48%;
->>>>>>> firstChild
+
                 padding: 30px 30px;
                 box-shadow: $boxShadow;
                 transition: 500ms;
@@ -1181,13 +1181,9 @@ footer{
 
         & > div{
             display: flex;
-<<<<<<< HEAD
-            justify-content: space-evenly;
-=======
             -webkit-box-pack: space-between;
                 -ms-flex-pack: space-between;
-                    justify-content: space-between;
->>>>>>> firstChild
+                  justify-content: space-between;
             margin-bottom: 50px;
 
             & > a{
@@ -1364,13 +1360,13 @@ footer{
 
        & > div{
             display: flex;
-<<<<<<< HEAD
+
             justify-content: space-evenly;
-=======
+
             -webkit-box-pack: space-between;
                 -ms-flex-pack: space-between;
                     justify-content: space-between;
->>>>>>> firstChild
+
             margin-bottom: 40px;
         & > div{
             height: 230px;
